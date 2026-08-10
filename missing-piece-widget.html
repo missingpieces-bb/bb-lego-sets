@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Missing Piece Selector</title>
+<script src="https://cdn.jotfor.ms/s/umd/latest/for-custom-widgets.js"></script>
+<style>
+  :root {
+    --border: #d8dce1;
+    --text: #23272f;
+    --muted: #6b7280;
+    --accent: #2f6fed;
+    --accent-bg: #eaf1ff;
+    --danger: #b3261e;
+    --radius: 8px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    font-size: 14px;
+    background: transparent;
+  }
+  #mp-root { max-width: 640px; }
+  .mp-hint {
+    color: var(--muted);
+    padding: 10px 0;
+  }
+  .mp-error {
+    color: var(--danger);
+    background: #fdecea;
+    border: 1px solid #f5c2be;
+    border-radius: var(--radius);
+    padding: 10px 12px;
+    margin-bottom: 10px;
+  }
+  .mp-confirm {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--accent-bg);
+    border: 1px solid #c7dbff;
+    border-radius: var(--radius);
+    padding: 10px 12px;
+    margin-bottom: 12px;
+  }
+  .mp-confirm img {
+    width: 48px; height: 48px; object-fit: contain;
+    background: #fff; border-radius: 4px; border: 1px solid var(--border);
+  }
+  .mp-confirm .mp-confirm-text strong { display: block; }
+  .mp-search {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .mp-search:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  .mp-count {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .mp-list {
+    max-height: 280px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .mp-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eef0f3;
+  }
+  .mp-item:last-child { border-bottom: none; }
+  .mp-item:hover { background: #f6f8fb; }
+  .mp-item.mp-selected { background: var(--accent-bg); }
+  .mp-item img {
+    width: 40px; height: 40px; object-fit: contain;
+    background: #fff; border: 1px solid var(--border); border-radius: 4px; flex-shrink: 0;
+  }
+  .mp-item .mp-thumb-fallback {
+    width: 40px; height: 40px; flex-shrink: 0;
+    background: #eef0f3; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; color: var(--muted); text-align: center;
+  }
+  .mp-item-text { min-width: 0; }
+  .mp-item-title { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .mp-item-sub { color: var(--muted); font-size: 12px; }
+  .mp-badge {
+    font-size: 10px; text-transform: uppercase; letter-spacing: .03em;
+    padding: 1px 6px; border-radius: 999px; margin-left: auto; flex-shrink: 0;
+  }
+  .mp-badge-part { background: #eef0f3; color: var(--muted); }
+  .mp-badge-minifig { background: #fff1d6; color: #8a5a00; }
+  .mp-selection {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .mp-selection img { width: 44px; height: 44px; object-fit: contain; background:#fff; border:1px solid var(--border); border-radius:4px; }
+  .mp-selection-text { flex: 1; min-width: 0; }
+  .mp-selection-text strong { display:block; }
+  .mp-qty-wrap { display: flex; align-items: center; gap: 6px; }
+  .mp-qty-wrap label { font-size: 12px; color: var(--muted); }
+  .mp-qty-wrap input {
+    width: 60px; padding: 6px 8px; border: 1px solid var(--border); border-radius: var(--radius);
+    font-size: 14px;
+  }
+  .mp-clear {
+    background: none; border: none; color: var(--muted); cursor: pointer; font-size: 12px;
+    text-decoration: underline; padding: 0;
+  }
+  .mp-more {
+    color: var(--muted); font-size: 12px; padding: 8px 10px;
+  }
+</style>
+</head>
+<body>
+<div id="mp-root">
+  <div class="mp-hint" id="mp-idle">Enter your LEGO set number above to find your piece.</div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- pure logic (same as logic.js — inlined so this is a single deployable file) ---------- */
+  function normalizeCatalog(data) {
+    if (!data || typeof data !== "object") return [];
+    var out = [];
+    (data.parts || []).forEach(function (p) {
+      out.push({ kind: "part", id: p.id, code: p.part_num, name: p.name, color: p.color || null, max_qty: p.max_qty, img: p.img || null, label: p.label });
+    });
+    (data.minifigs || []).forEach(function (m) {
+      out.push({ kind: "minifig", id: m.id, code: m.fig_num, name: m.name, color: null, max_qty: m.max_qty, img: m.img || null, label: m.label });
+    });
+    return out;
+  }
+  function filterCatalog(items, query) {
+    var q = (query || "").trim().toLowerCase();
+    if (!q) return items;
+    return items.filter(function (item) {
+      return (item.code && item.code.toLowerCase().indexOf(q) !== -1) ||
+             (item.name && item.name.toLowerCase().indexOf(q) !== -1) ||
+             (item.color && item.color.toLowerCase().indexOf(q) !== -1) ||
+             (item.label && item.label.toLowerCase().indexOf(q) !== -1);
+    });
+  }
+  function clampQty(value, maxQty) {
+    var n = parseInt(value, 10);
+    if (isNaN(n) || n < 1) n = 1;
+    var max = parseInt(maxQty, 10);
+    if (!isNaN(max) && max > 0 && n > max) n = max;
+    return n;
+  }
+  function composeSubmission(args) {
+    var setNum = args.setNum, setName = args.setName, item = args.item, qty = args.qty;
+    if (!setNum || !item || !qty) return "";
+    var itemLine = item.kind === "minifig"
+      ? "Minifigure: " + item.code + " \u2014 " + item.name
+      : "Part: " + item.code + " \u2014 " + item.name + (item.color ? " (" + item.color + ")" : "");
+    return ["Set: " + setNum + (setName ? " \u2014 " + setName : ""), itemLine, "Quantity requested: " + qty].join("\n");
+  }
+
+  /* ---------- widget state ---------- */
+  var MAX_RENDERED = 150; // keep the DOM light on big sets; narrow with search for the rest
+  var state = { setNum: null, setName: null, setImg: null, catalog: [], query: "", selected: null, qty: 1, status: "idle" };
+  var root = document.getElementById("mp-root");
+  var fetchToken = 0; // guards against a slow older fetch overwriting a newer one
+
+  function escapeHtml(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function render() {
+    if (state.status === "idle") {
+      root.innerHTML = '<div class="mp-hint">Enter your LEGO set number above to find your piece.</div>';
+      return;
+    }
+    if (state.status === "loading") {
+      root.innerHTML = '<div class="mp-hint">Looking up set ' + escapeHtml(state.setNum) + '\u2026</div>';
+      return;
+    }
+    if (state.status === "notfound") {
+      root.innerHTML = '<div class="mp-error">We couldn\u2019t find set number \u201c' + escapeHtml(state.setNum) +
+        '\u201d in our inventory. Please double-check the number, or contact us if you think this is a mistake.</div>';
+      return;
+    }
+    if (state.status === "error") {
+      root.innerHTML = '<div class="mp-error">Something went wrong loading this set\u2019s pieces. Please try again in a moment.</div>';
+      return;
+    }
+
+    // status === "ready"
+    var html = "";
+    html += '<div class="mp-confirm">';
+    html += state.setImg ? '<img src="' + escapeHtml(state.setImg) + '" alt="" />' : '';
+    html += '<div class="mp-confirm-text">Is this your set?<strong>' + escapeHtml(state.setNum) + ' \u2014 ' + escapeHtml(state.setName) + '</strong></div>';
+    html += '</div>';
+
+    html += '<input type="text" class="mp-search" id="mp-search" placeholder="Search by part number, name, or colour\u2026" value="' + escapeHtml(state.query) + '" />';
+
+    var filtered = filterCatalog(state.catalog, state.query);
+    html += '<div class="mp-count">' + filtered.length + ' item' + (filtered.length === 1 ? "" : "s") +
+      (state.catalog.length ? " (parts + minifigures)" : "") + '</div>';
+
+    html += '<div class="mp-list" id="mp-list">';
+    var shown = filtered.slice(0, MAX_RENDERED);
+    if (shown.length === 0) {
+      html += '<div class="mp-more">No matches \u2014 try a different search term.</div>';
+    }
+    shown.forEach(function (item) {
+      var selectedCls = state.selected && state.selected.id === item.id && state.selected.kind === item.kind ? " mp-selected" : "";
+      html += '<div class="mp-item' + selectedCls + '" data-id="' + escapeHtml(item.id) + '" data-kind="' + item.kind + '">';
+      html += item.img
+        ? '<img src="' + escapeHtml(item.img) + '" alt="" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{className:\'mp-thumb-fallback\',textContent:\'No photo\'}))" />'
+        : '<div class="mp-thumb-fallback">No photo</div>';
+      html += '<div class="mp-item-text">';
+      html += '<div class="mp-item-title">' + escapeHtml(item.code) + ' \u2014 ' + escapeHtml(item.name) + '</div>';
+      html += '<div class="mp-item-sub">' + escapeHtml(item.color || (item.kind === "minifig" ? "Minifigure" : "")) + '</div>';
+      html += '</div>';
+      html += '<span class="mp-badge ' + (item.kind === "minifig" ? "mp-badge-minifig" : "mp-badge-part") + '">' + item.kind + '</span>';
+      html += '</div>';
+    });
+    if (filtered.length > MAX_RENDERED) {
+      html += '<div class="mp-more">+' + (filtered.length - MAX_RENDERED) + ' more \u2014 keep typing to narrow it down.</div>';
+    }
+    html += '</div>';
+
+    if (state.selected) {
+      var sel = state.selected;
+      html += '<div class="mp-selection">';
+      html += sel.img ? '<img src="' + escapeHtml(sel.img) + '" alt="" />' : '';
+      html += '<div class="mp-selection-text"><strong>' + escapeHtml(sel.code) + ' \u2014 ' + escapeHtml(sel.name) + '</strong>' +
+        (sel.color ? escapeHtml(sel.color) : (sel.kind === "minifig" ? "Minifigure" : "")) + '</div>';
+      html += '<div class="mp-qty-wrap"><label for="mp-qty">Qty</label><input type="number" id="mp-qty" min="1" max="' +
+        (sel.max_qty || 1) + '" value="' + state.qty + '" /></div>';
+      html += '<button type="button" class="mp-clear" id="mp-clear">Clear</button>';
+      html += '</div>';
+    }
+
+    root.innerHTML = html;
+
+    var searchEl = document.getElementById("mp-search");
+    if (searchEl) {
+      searchEl.addEventListener("input", function (e) {
+        state.query = e.target.value;
+        render();
+        // restore focus/caret after re-render
+        var s = document.getElementById("mp-search");
+        if (s) { s.focus(); s.selectionStart = s.selectionEnd = s.value.length; }
+      });
+    }
+    var listEl = document.getElementById("mp-list");
+    if (listEl) {
+      listEl.querySelectorAll(".mp-item").forEach(function (el) {
+        el.addEventListener("click", function () {
+          var id = el.getAttribute("data-id"), kind = el.getAttribute("data-kind");
+          var item = state.catalog.filter(function (i) { return i.id === id && i.kind === kind; })[0];
+          if (!item) return;
+          state.selected = item;
+          state.qty = clampQty(1, item.max_qty);
+          render();
+          sendCurrentValue();
+        });
+      });
+    }
+    var qtyEl = document.getElementById("mp-qty");
+    if (qtyEl) {
+      qtyEl.addEventListener("change", function (e) {
+        state.qty = clampQty(e.target.value, state.selected ? state.selected.max_qty : null);
+        e.target.value = state.qty;
+        sendCurrentValue();
+      });
+    }
+    var clearEl = document.getElementById("mp-clear");
+    if (clearEl) {
+      clearEl.addEventListener("click", function () {
+        state.selected = null;
+        state.qty = 1;
+        render();
+        sendCurrentValue();
+      });
+    }
+  }
+
+  function loadSet(setNum) {
+    var token = ++fetchToken;
+    state.setNum = setNum;
+    state.selected = null;
+    state.query = "";
+    if (!setNum) {
+      state.status = "idle";
+      render();
+      sendCurrentValue();
+      return;
+    }
+    state.status = "loading";
+    render();
+
+    var base = (JFCustomWidget.getWidgetSetting("dataBaseUrl") || "https://missingpieces-bb.github.io/bb-lego-sets/parts/").replace(/\/?$/, "/");
+    fetch(base + encodeURIComponent(setNum) + ".json")
+      .then(function (res) {
+        if (token !== fetchToken) return null; // a newer lookup started; drop this one
+        if (res.status === 404) { state.status = "notfound"; render(); return null; }
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        if (!data || token !== fetchToken) return;
+        state.setName = data.set_name || "";
+        state.setImg = data.set_img || null;
+        state.catalog = normalizeCatalog(data);
+        state.status = "ready";
+        render();
+        sendCurrentValue();
+      })
+      .catch(function (err) {
+        if (token !== fetchToken) return;
+        state.status = "error";
+        render();
+        console.error("Missing piece widget fetch failed:", err);
+      });
+  }
+
+  function sendCurrentValue() {
+    var value = composeSubmission({ setNum: state.setNum, setName: state.setName, item: state.selected, qty: state.qty });
+    JFCustomWidget.sendData({ valid: !!value, value: value });
+  }
+
+  /* ---------- wiring to the parent Jotform ---------- */
+  JFCustomWidget.subscribe("ready", function () {
+    var fieldId = JFCustomWidget.getWidgetSetting("setNumberFieldId"); // e.g. "4" — the LEGO Set Number field's ID
+    var initial = JFCustomWidget.getWidgetSetting("initialSetNumber") || "";
+
+    if (fieldId) {
+      JFCustomWidget.listenFromField("input_" + fieldId, "change", function (value) { loadSet((value || "").trim()); });
+      JFCustomWidget.listenFromField("input_" + fieldId, "keyup", function (value) { loadSet((value || "").trim()); });
+      JFCustomWidget.getFieldsValueById([fieldId], function (data) {
+        var v = data && data[fieldId];
+        if (v) loadSet(String(v).trim());
+      });
+    } else if (initial) {
+      loadSet(initial);
+    } else {
+      render();
+    }
+
+    JFCustomWidget.subscribe("submit", function () {
+      sendCurrentValue();
+      var value = composeSubmission({ setNum: state.setNum, setName: state.setName, item: state.selected, qty: state.qty });
+      JFCustomWidget.sendSubmit({ valid: !!value, value: value });
+    });
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
