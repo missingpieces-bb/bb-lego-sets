@@ -154,15 +154,19 @@
   function composeSubmission(args) {
     var setNum = args.setNum, setName = args.setName, cart = args.cart || [];
     if (!setNum || cart.length === 0) return "";
-    var lines = ["Set: " + setNum + (setName ? " \u2014 " + setName : ""), ""];
-    cart.forEach(function (entry, i) {
+    var items = cart.map(function (entry) {
       var item = entry.item;
-      var itemLine = item.kind === "minifig"
-        ? "Minifigure: " + item.code + " \u2014 " + item.name
-        : "Part: " + item.code + " \u2014 " + item.name + (item.color ? " (" + item.color + ")" : "");
-      lines.push((i + 1) + ") " + itemLine + " \u2014 Qty: " + entry.qty);
+      var out = { type: item.kind, qty: entry.qty };
+      if (item.kind === "minifig") {
+        out.fig_num = item.code;
+      } else {
+        out.part_num = item.code;
+        out.color = item.color || null;
+      }
+      out.name = item.name;
+      return out;
     });
-    return lines.join("\n");
+    return JSON.stringify({ set_num: setNum, set_name: setName || "", items: items });
   }
 
   /* ---------- widget state ---------- */
