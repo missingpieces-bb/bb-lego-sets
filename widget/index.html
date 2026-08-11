@@ -465,7 +465,9 @@
           return;
         }
 
-        var figBase = (JFCustomWidget.getWidgetSetting("minifigBaseUrl") || "https://missingpieces-bb.github.io/bb-lego-sets/minifig_parts/").replace(/\/?$/, "/");
+        var figSetting = null;
+        try { figSetting = JFCustomWidget.getWidgetSetting("minifigBaseUrl"); } catch (e) { /* setting was never registered — use the default below */ }
+        var figBase = (figSetting && /^https?:\/\//.test(figSetting) ? figSetting : "https://missingpieces-bb.github.io/bb-lego-sets/minifig_parts/").replace(/\/?$/, "/");
         Promise.all(figCodes.map(function (code) {
           return fetch(figBase + encodeURIComponent(code) + ".json")
             .then(function (r) { return r.ok ? r.json() : null; })
