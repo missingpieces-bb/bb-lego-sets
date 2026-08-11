@@ -71,7 +71,24 @@
   .mp-badge-part { background: #eef0f3; color: var(--muted); }
   .mp-badge-minifig { background: #fff1d6; color: #8a5a00; }
   .mp-badge-added { background: var(--accent); color: #fff; }
+  .mp-badge-included { background: #dcdfe4; color: var(--muted); }
   .mp-more { color: var(--muted); font-size: 12px; padding: 8px 10px; }
+  .mp-expand-toggle {
+    background: none; border: 1px solid var(--border); border-radius: 999px;
+    color: var(--muted); font-size: 11px; padding: 2px 8px; cursor: pointer; flex-shrink: 0;
+  }
+  .mp-expand-toggle:hover { background: #f6f8fb; }
+  .mp-subitem-group { background: #fafbfc; border-bottom: 1px solid #eef0f3; }
+  .mp-subitem {
+    display: flex; align-items: center; gap: 10px;
+    padding: 6px 10px 6px 30px; cursor: pointer; border-bottom: 1px solid #f2f3f5;
+  }
+  .mp-subitem:last-child { border-bottom: none; }
+  .mp-subitem:hover:not(.mp-disabled) { background: #f0f3f8; }
+  .mp-subitem.mp-in-cart { background: var(--accent-bg); }
+  .mp-subitem.mp-disabled { cursor: default; opacity: 0.6; }
+  .mp-subitem img { width: 32px; height: 32px; object-fit: contain; background: #fff; border: 1px solid var(--border); border-radius: 4px; flex-shrink: 0; }
+  .mp-subitem .mp-thumb-fallback { width: 32px; height: 32px; flex-shrink: 0; background: #eef0f3; border-radius: 4px; display:flex; align-items:center; justify-content:center; font-size:9px; color:var(--muted); }
 
   .mp-cart { margin-top: 14px; }
   .mp-cart-title { font-weight: 600; margin-bottom: 6px; }
@@ -120,6 +137,29 @@
         return;
       }
     }
+  }
+  function componentId(comp) {
+    return comp.part_num + "::" + (comp.color || "");
+  }
+  function componentAsCartItem(comp, minifig) {
+    return {
+      kind: "part",
+      id: componentId(comp),
+      code: comp.part_num,
+      name: comp.name,
+      color: comp.color || null,
+      max_qty: (minifig.max_qty || 1) * (comp.qty || 1),
+      img: comp.img || null,
+      label: comp.part_num + " — " + comp.name + (comp.color ? " (" + comp.color + ")" : ""),
+      fromLabel: minifig.name
+    };
+  }
+  function removeMinifigComponentsFromCart(cart, minifig) {
+    if (!minifig.breakdown || minifig.breakdown.length === 0) return cart;
+    var ids = minifig.breakdown.map(componentId);
+    return cart.filter(function (entry) {
+      return !(entry.item.kind === "part" && ids.indexOf(entry.item.id) !== -1);
+    });
   }
   function filterCatalog(items, query) {
     var q = (query || "").trim().toLowerCase();
@@ -184,7 +224,7 @@
           unresolvedMinifigs.push({ type: "minifig", fig_num: item.code, name: item.name, qty: entry.qty });
         }
       } else {
-        addPart(item.code, item.color, item.name, entry.qty, null);
+        addPart(item.code, item.color, item.name, entry.qty, item.fromLabel || null);
       }
     });
 
@@ -200,7 +240,7 @@
 
   /* ---------- widget state ---------- */
   var MAX_RENDERED = 150;
-  var state = { setNum: null, setName: null, setImg: null, catalog: [], query: "", cart: [], status: "idle" };
+  var state = { setNum: null, setName: null, setImg: null, catalog: [], query: "", cart: [], expandedFigs: [], status: "idle" };
   var root = document.getElementById("mp-root");
   var fetchToken = 0;
 
@@ -247,6 +287,9 @@
     }
     shown.forEach(function (item) {
       var inCart = cartIndexOf(state.cart, item.kind, item.id) !== -1;
+      var hasParts = item.kind === "minifig" && item.breakdown && item.breakdown.length > 0;
+      var isExpanded = hasParts && state.expandedFigs.indexOf(item.id) !== -1;
+
       html += '<div class="mp-item' + (inCart ? " mp-in-cart" : "") + '" data-id="' + escapeHtml(item.id) + '" data-kind="' + item.kind + '">';
       html += item.img
         ? '<img src="' + escapeHtml(item.img) + '" alt="" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{className:\'mp-thumb-fallback\',textContent:\'No photo\'}))" />'
@@ -255,10 +298,37 @@
       html += '<div class="mp-item-title">' + escapeHtml(item.code) + ' \u2014 ' + escapeHtml(item.name) + '</div>';
       html += '<div class="mp-item-sub">' + escapeHtml(item.color || (item.kind === "minifig" ? "Minifigure" : "")) + '</div>';
       html += '</div>';
+      if (hasParts) {
+        html += '<button type="button" class="mp-expand-toggle" data-fig="' + escapeHtml(item.id) + '" title="Just need one piece of this figure?">' +
+          (isExpanded ? '\u25be Parts' : '\u25b8 Parts') + '</button>';
+      }
       html += inCart
         ? '<span class="mp-badge mp-badge-added">Added</span>'
         : '<span class="mp-badge ' + (item.kind === "minifig" ? "mp-badge-minifig" : "mp-badge-part") + '">' + item.kind + '</span>';
       html += '</div>';
+
+      if (isExpanded) {
+        html += '<div class="mp-subitem-group">';
+        item.breakdown.forEach(function (comp) {
+          var compId = componentId(comp);
+          var compInCart = cartIndexOf(state.cart, "part", compId) !== -1;
+          var disabled = inCart; // whole figure already covers every component
+          html += '<div class="mp-subitem' + (compInCart ? " mp-in-cart" : "") + (disabled ? " mp-disabled" : "") +
+            '" data-fig="' + escapeHtml(item.id) + '" data-part="' + escapeHtml(comp.part_num) + '" data-color="' + escapeHtml(comp.color || "") + '">';
+          html += comp.img
+            ? '<img src="' + escapeHtml(comp.img) + '" alt="" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{className:\'mp-thumb-fallback\',textContent:\'No photo\'}))" />'
+            : '<div class="mp-thumb-fallback">No photo</div>';
+          html += '<div class="mp-item-text">';
+          html += '<div class="mp-item-title">' + escapeHtml(comp.part_num) + ' \u2014 ' + escapeHtml(comp.name) + '</div>';
+          html += '<div class="mp-item-sub">' + escapeHtml(comp.color || "") + '</div>';
+          html += '</div>';
+          html += disabled
+            ? '<span class="mp-badge mp-badge-included">Included</span>'
+            : (compInCart ? '<span class="mp-badge mp-badge-added">Added</span>' : '<span class="mp-badge mp-badge-part">part</span>');
+          html += '</div>';
+        });
+        html += '</div>';
+      }
     });
     if (filtered.length > MAX_RENDERED) {
       html += '<div class="mp-more">+' + (filtered.length - MAX_RENDERED) + ' more \u2014 keep typing to narrow it down.</div>';
@@ -304,7 +374,34 @@
           var id = el.getAttribute("data-id"), kind = el.getAttribute("data-kind");
           var item = state.catalog.filter(function (i) { return i.id === id && i.kind === kind; })[0];
           if (!item) return;
+          var addingWholeFig = kind === "minifig" && cartIndexOf(state.cart, "minifig", id) === -1;
+          if (addingWholeFig) {
+            state.cart = removeMinifigComponentsFromCart(state.cart, item); // no double-counting a piece already picked alone
+          }
           state.cart = toggleCart(state.cart, item);
+          render();
+          sendCurrentValue();
+        });
+      });
+      listEl.querySelectorAll(".mp-expand-toggle").forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation(); // don't also trigger the row's whole-figure toggle
+          var figId = btn.getAttribute("data-fig");
+          var idx = state.expandedFigs.indexOf(figId);
+          if (idx === -1) state.expandedFigs.push(figId); else state.expandedFigs.splice(idx, 1);
+          render();
+        });
+      });
+      listEl.querySelectorAll(".mp-subitem").forEach(function (el) {
+        el.addEventListener("click", function () {
+          if (el.classList.contains("mp-disabled")) return; // whole figure already covers this piece
+          var figId = el.getAttribute("data-fig");
+          var minifig = state.catalog.filter(function (i) { return i.id === figId && i.kind === "minifig"; })[0];
+          if (!minifig) return;
+          var partNum = el.getAttribute("data-part"), color = el.getAttribute("data-color");
+          var comp = minifig.breakdown.filter(function (c) { return c.part_num === partNum && (c.color || "") === color; })[0];
+          if (!comp) return;
+          state.cart = toggleCart(state.cart, componentAsCartItem(comp, minifig));
           render();
           sendCurrentValue();
         });
@@ -336,6 +433,7 @@
     state.setNum = setNum;
     state.cart = [];
     state.query = "";
+    state.expandedFigs = [];
     if (!setNum) {
       state.status = "idle";
       render();
