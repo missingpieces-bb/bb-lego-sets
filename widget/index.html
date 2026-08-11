@@ -109,9 +109,17 @@
       out.push({ kind: "part", id: p.id, code: p.part_num, name: p.name, color: p.color || null, max_qty: p.max_qty, img: p.img || null, label: p.label });
     });
     (data.minifigs || []).forEach(function (m) {
-      out.push({ kind: "minifig", id: m.id, code: m.fig_num, name: m.name, color: null, max_qty: m.max_qty, img: m.img || null, label: m.label });
+      out.push({ kind: "minifig", id: m.id, code: m.fig_num, name: m.name, color: null, max_qty: m.max_qty, img: m.img || null, label: m.label, breakdown: null });
     });
     return out;
+  }
+  function attachBreakdown(catalog, figNum, parts) {
+    for (var i = 0; i < catalog.length; i++) {
+      if (catalog[i].kind === "minifig" && catalog[i].code === figNum) {
+        catalog[i].breakdown = parts || [];
+        return;
+      }
+    }
   }
   function filterCatalog(items, query) {
     var q = (query || "").trim().toLowerCase();
@@ -154,18 +162,39 @@
   function composeSubmission(args) {
     var setNum = args.setNum, setName = args.setName, cart = args.cart || [];
     if (!setNum || cart.length === 0) return "";
-    var items = cart.map(function (entry) {
+
+    var merged = {};
+    function addPart(part_num, color, name, qty, sourceLabel) {
+      var key = part_num + "|" + (color || "");
+      if (!merged[key]) merged[key] = { part_num: part_num, color: color || null, name: name, qty: 0, from: [] };
+      merged[key].qty += qty;
+      if (sourceLabel && merged[key].from.indexOf(sourceLabel) === -1) merged[key].from.push(sourceLabel);
+    }
+
+    var unresolvedMinifigs = [];
+
+    cart.forEach(function (entry) {
       var item = entry.item;
-      var out = { type: item.kind, qty: entry.qty };
       if (item.kind === "minifig") {
-        out.fig_num = item.code;
+        if (item.breakdown && item.breakdown.length > 0) {
+          item.breakdown.forEach(function (p) {
+            addPart(p.part_num, p.color, p.name, p.qty * entry.qty, item.name);
+          });
+        } else {
+          unresolvedMinifigs.push({ type: "minifig", fig_num: item.code, name: item.name, qty: entry.qty });
+        }
       } else {
-        out.part_num = item.code;
-        out.color = item.color || null;
+        addPart(item.code, item.color, item.name, entry.qty, null);
       }
-      out.name = item.name;
-      return out;
     });
+
+    var items = Object.keys(merged).map(function (k) {
+      var m = merged[k];
+      var out = { type: "part", part_num: m.part_num, color: m.color, name: m.name, qty: m.qty };
+      if (m.from.length > 0) out.from_minifig = m.from.join(", ");
+      return out;
+    }).concat(unresolvedMinifigs);
+
     return JSON.stringify({ set_num: setNum, set_name: setName || "", items: items });
   }
 
@@ -329,9 +358,27 @@
         state.setName = data.set_name || "";
         state.setImg = data.set_img || null;
         state.catalog = normalizeCatalog(data);
-        state.status = "ready";
-        render();
-        sendCurrentValue();
+
+        var figCodes = state.catalog.filter(function (i) { return i.kind === "minifig"; }).map(function (i) { return i.code; });
+        if (figCodes.length === 0) {
+          state.status = "ready";
+          render();
+          sendCurrentValue();
+          return;
+        }
+
+        var figBase = (JFCustomWidget.getWidgetSetting("minifigBaseUrl") || "https://missingpieces-bb.github.io/bb-lego-sets/minifig_parts/").replace(/\/?$/, "/");
+        Promise.all(figCodes.map(function (code) {
+          return fetch(figBase + encodeURIComponent(code) + ".json")
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (figData) { attachBreakdown(state.catalog, code, figData ? figData.parts : []); })
+            .catch(function () { attachBreakdown(state.catalog, code, []); }); // falls back to a plain minifig line — see composeSubmission
+        })).then(function () {
+          if (token !== fetchToken) return;
+          state.status = "ready";
+          render();
+          sendCurrentValue();
+        });
       })
       .catch(function (err) {
         if (token !== fetchToken) return;
