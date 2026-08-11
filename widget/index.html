@@ -250,6 +250,47 @@
     });
   }
 
+  function buildSubitemGroupHtml(item, wholeFigInCart) {
+    var html = '<div class="mp-subitem-group">';
+    item.breakdown.forEach(function (comp) {
+      var compId = componentId(comp);
+      var compInCart = cartIndexOf(state.cart, "part", compId) !== -1;
+      var disabled = wholeFigInCart; // whole figure already covers every component
+      html += '<div class="mp-subitem' + (compInCart ? " mp-in-cart" : "") + (disabled ? " mp-disabled" : "") +
+        '" data-fig="' + escapeHtml(item.id) + '" data-part="' + escapeHtml(comp.part_num) + '" data-color="' + escapeHtml(comp.color || "") + '">';
+      html += comp.img
+        ? '<img src="' + escapeHtml(comp.img) + '" alt="" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{className:\'mp-thumb-fallback\',textContent:\'No photo\'}))" />'
+        : '<div class="mp-thumb-fallback">No photo</div>';
+      html += '<div class="mp-item-text">';
+      html += '<div class="mp-item-title">' + escapeHtml(comp.part_num) + ' \u2014 ' + escapeHtml(comp.name) + '</div>';
+      html += '<div class="mp-item-sub">' + escapeHtml(comp.color || "") + '</div>';
+      html += '</div>';
+      html += disabled
+        ? '<span class="mp-badge mp-badge-included">Included</span>'
+        : (compInCart ? '<span class="mp-badge mp-badge-added">Added</span>' : '<span class="mp-badge mp-badge-part">part</span>');
+      html += '</div>';
+    });
+    html += '</div>';
+    return html;
+  }
+
+  function wireSubitemHandlers(containerEl) {
+    containerEl.querySelectorAll(".mp-subitem").forEach(function (el) {
+      el.addEventListener("click", function () {
+        if (el.classList.contains("mp-disabled")) return; // whole figure already covers this piece
+        var figId = el.getAttribute("data-fig");
+        var minifig = state.catalog.filter(function (i) { return i.id === figId && i.kind === "minifig"; })[0];
+        if (!minifig) return;
+        var partNum = el.getAttribute("data-part"), color = el.getAttribute("data-color");
+        var comp = minifig.breakdown.filter(function (c) { return c.part_num === partNum && (c.color || "") === color; })[0];
+        if (!comp) return;
+        state.cart = toggleCart(state.cart, componentAsCartItem(comp, minifig));
+        render();
+        sendCurrentValue();
+      });
+    });
+  }
+
   function render() {
     if (state.status === "idle") {
       root.innerHTML = '<div class="mp-hint">Enter your LEGO set number above to find your piece.</div>';
@@ -308,26 +349,7 @@
       html += '</div>';
 
       if (isExpanded) {
-        html += '<div class="mp-subitem-group">';
-        item.breakdown.forEach(function (comp) {
-          var compId = componentId(comp);
-          var compInCart = cartIndexOf(state.cart, "part", compId) !== -1;
-          var disabled = inCart; // whole figure already covers every component
-          html += '<div class="mp-subitem' + (compInCart ? " mp-in-cart" : "") + (disabled ? " mp-disabled" : "") +
-            '" data-fig="' + escapeHtml(item.id) + '" data-part="' + escapeHtml(comp.part_num) + '" data-color="' + escapeHtml(comp.color || "") + '">';
-          html += comp.img
-            ? '<img src="' + escapeHtml(comp.img) + '" alt="" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{className:\'mp-thumb-fallback\',textContent:\'No photo\'}))" />'
-            : '<div class="mp-thumb-fallback">No photo</div>';
-          html += '<div class="mp-item-text">';
-          html += '<div class="mp-item-title">' + escapeHtml(comp.part_num) + ' \u2014 ' + escapeHtml(comp.name) + '</div>';
-          html += '<div class="mp-item-sub">' + escapeHtml(comp.color || "") + '</div>';
-          html += '</div>';
-          html += disabled
-            ? '<span class="mp-badge mp-badge-included">Included</span>'
-            : (compInCart ? '<span class="mp-badge mp-badge-added">Added</span>' : '<span class="mp-badge mp-badge-part">part</span>');
-          html += '</div>';
-        });
-        html += '</div>';
+        html += buildSubitemGroupHtml(item, inCart);
       }
     });
     if (filtered.length > MAX_RENDERED) {
@@ -385,26 +407,34 @@
       });
       listEl.querySelectorAll(".mp-expand-toggle").forEach(function (btn) {
         btn.addEventListener("click", function (e) {
+          e.preventDefault();
           e.stopPropagation(); // don't also trigger the row's whole-figure toggle
           var figId = btn.getAttribute("data-fig");
+          var item = state.catalog.filter(function (i) { return i.id === figId && i.kind === "minifig"; })[0];
+          if (!item) return;
+          var row = btn.closest(".mp-item");
           var idx = state.expandedFigs.indexOf(figId);
-          if (idx === -1) state.expandedFigs.push(figId); else state.expandedFigs.splice(idx, 1);
-          render();
+
+          if (idx === -1) {
+            // Expand: insert the sub-item group right after this row only —
+            // never touch the rest of the list, so the button (and page
+            // scroll position) never gets disturbed.
+            state.expandedFigs.push(figId);
+            var inCart = cartIndexOf(state.cart, "minifig", figId) !== -1;
+            row.insertAdjacentHTML("afterend", buildSubitemGroupHtml(item, inCart));
+            wireSubitemHandlers(row.nextElementSibling);
+            btn.textContent = "\u25be Parts";
+          } else {
+            // Collapse: remove just that one inserted block.
+            state.expandedFigs.splice(idx, 1);
+            var group = row.nextElementSibling;
+            if (group && group.classList.contains("mp-subitem-group")) group.remove();
+            btn.textContent = "\u25b8 Parts";
+          }
         });
       });
-      listEl.querySelectorAll(".mp-subitem").forEach(function (el) {
-        el.addEventListener("click", function () {
-          if (el.classList.contains("mp-disabled")) return; // whole figure already covers this piece
-          var figId = el.getAttribute("data-fig");
-          var minifig = state.catalog.filter(function (i) { return i.id === figId && i.kind === "minifig"; })[0];
-          if (!minifig) return;
-          var partNum = el.getAttribute("data-part"), color = el.getAttribute("data-color");
-          var comp = minifig.breakdown.filter(function (c) { return c.part_num === partNum && (c.color || "") === color; })[0];
-          if (!comp) return;
-          state.cart = toggleCart(state.cart, componentAsCartItem(comp, minifig));
-          render();
-          sendCurrentValue();
-        });
+      listEl.querySelectorAll(".mp-subitem-group").forEach(function (group) {
+        wireSubitemHandlers(group);
       });
     }
     root.querySelectorAll(".mp-cart-row").forEach(function (row) {
