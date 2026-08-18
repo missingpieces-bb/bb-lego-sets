@@ -111,7 +111,7 @@
 </head>
 <body>
 <div id="mp-root">
-  <div class="mp-hint" id="mp-idle">Enter your LEGO® set number above to find your piece.</div>
+  <div class="mp-hint" id="mp-idle">Enter your LEGO set number above to find your piece.</div>
 </div>
 
 <script>
@@ -267,7 +267,7 @@
       html += '</div>';
       html += disabled
         ? '<span class="mp-badge mp-badge-included">Included</span>'
-        : (compInCart ? '<span class="mp-badge mp-badge-added">Added</span>' : '<span class="mp-badge mp-badge-part">part</span>');
+        : (compInCart ? '<span class="mp-badge mp-badge-added">Added</span>' : '<span class="mp-badge mp-badge-part">Add</span>');
       html += '</div>';
     });
     html += '</div>';
@@ -296,7 +296,7 @@
     var prevCartScroll = document.getElementById("mp-cart-list") ? document.getElementById("mp-cart-list").scrollTop : null;
 
     if (state.status === "idle") {
-      root.innerHTML = '<div class="mp-hint">Enter your LEGO® set number above to find your piece.</div>';
+      root.innerHTML = '<div class="mp-hint">Enter your LEGO set number above to find your piece.</div>';
       return;
     }
     if (state.status === "loading") {
@@ -348,7 +348,7 @@
       }
       html += inCart
         ? '<span class="mp-badge mp-badge-added">Added</span>'
-        : '<span class="mp-badge ' + (item.kind === "minifig" ? "mp-badge-minifig" : "mp-badge-part") + '">' + item.kind + '</span>';
+        : '<span class="mp-badge ' + (item.kind === "minifig" ? "mp-badge-minifig" : "mp-badge-part") + '">Add</span>';
       html += '</div>';
 
       if (isExpanded) {
