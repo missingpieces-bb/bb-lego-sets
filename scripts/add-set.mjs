@@ -149,7 +149,7 @@ async function main() {
       index.push(result);
     }
     index.sort((a, b) => a.set_num.localeCompare(b.set_num, undefined, { numeric: true }));
-    await writeFile(indexPath, JSON.stringify(index));
+    await writeFile(indexPath, JSON.stringify(index, null, 2));
     console.log(`\nUpdated index.json (${index.length} sets total)`);
   }
 
