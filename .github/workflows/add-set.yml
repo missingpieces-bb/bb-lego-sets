@@ -1,0 +1,38 @@
+name: Add or refresh a set
+
+on:
+  workflow_dispatch:
+    inputs:
+      set_number:
+        description: "LEGO set number, without the -1 suffix (e.g. 10218)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  add-set:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch set data from Rebrickable and write JSON
+        env:
+          REBRICKABLE_API_KEY: ${{ secrets.REBRICKABLE_API_KEY }}
+          SET_NUMBER: ${{ inputs.set_number }}
+        run: node scripts/add-set.mjs
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "bb-lego-sets bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.json parts minifig_parts
+          git diff --cached --quiet || git commit -m "Add/update set ${{ inputs.set_number }}"
+          git push
