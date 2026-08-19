@@ -1,0 +1,27 @@
+{
+  "fig_num": "fig-017367",
+  "name": "Skeleton, Standard Face, Bent Arms, Vertical Hand Clips, 78132 Torso, No Legs",
+  "parts": [
+    {
+      "part_num": "93061",
+      "name": "Arm Skeleton Bent with Clips at 90° [Vertical Grip]",
+      "color": "White",
+      "qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4609295.jpg"
+    },
+    {
+      "part_num": "3626cpr0895",
+      "name": "Minifig Head Skeleton, Standard Skull Print",
+      "color": "White",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4651445.jpg"
+    },
+    {
+      "part_num": "78132",
+      "name": "Torso - Skeleton Thick Shoulder Pins, Reinforced Hips with Hole",
+      "color": "White",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6359891.jpg"
+    }
+  ]
+}

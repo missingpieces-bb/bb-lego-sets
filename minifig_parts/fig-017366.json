@@ -1,0 +1,34 @@
+{
+  "fig_num": "fig-017366",
+  "name": "Chester Copperpot (Skeleton)",
+  "parts": [
+    {
+      "part_num": "28974",
+      "name": "Minifig Neckwear Bracket [One Stud] - Reinforced",
+      "color": "Reddish Brown",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6170809.jpg"
+    },
+    {
+      "part_num": "93609",
+      "name": "Arm Skeleton [Bent / 2 Clips]",
+      "color": "White",
+      "qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4611446.jpg"
+    },
+    {
+      "part_num": "3626cpr0895",
+      "name": "Minifig Head Skeleton, Standard Skull Print",
+      "color": "White",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4651445.jpg"
+    },
+    {
+      "part_num": "78132",
+      "name": "Torso - Skeleton Thick Shoulder Pins, Reinforced Hips with Hole",
+      "color": "White",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6359891.jpg"
+    }
+  ]
+}
