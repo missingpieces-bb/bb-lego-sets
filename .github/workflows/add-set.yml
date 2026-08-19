@@ -3,8 +3,8 @@ name: Add or refresh a set
 on:
   workflow_dispatch:
     inputs:
-      set_number:
-        description: "LEGO set number, without the -1 suffix (e.g. 10218)"
+      set_numbers:
+        description: "LEGO set numbers, comma or newline separated (e.g. 10218, 21363, 43031)"
         required: true
         type: string
 
@@ -26,7 +26,7 @@ jobs:
       - name: Fetch set data from Rebrickable and write JSON
         env:
           REBRICKABLE_API_KEY: ${{ secrets.REBRICKABLE_API_KEY }}
-          SET_NUMBER: ${{ inputs.set_number }}
+          SET_NUMBERS: ${{ inputs.set_numbers }}
         run: node scripts/add-set.mjs
 
       - name: Commit and push changes
@@ -34,5 +34,5 @@ jobs:
           git config user.name "bb-lego-sets bot"
           git config user.email "actions@users.noreply.github.com"
           git add index.json parts minifig_parts
-          git diff --cached --quiet || git commit -m "Add/update set ${{ inputs.set_number }}"
+          git diff --cached --quiet || git commit -m "Add/update sets: ${{ inputs.set_numbers }}"
           git push
