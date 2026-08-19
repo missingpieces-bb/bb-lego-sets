@@ -34,5 +34,24 @@ jobs:
           git config user.name "bb-lego-sets bot"
           git config user.email "actions@users.noreply.github.com"
           git add index.json parts minifig_parts
-          git diff --cached --quiet || git commit -m "Add/update sets: ${{ inputs.set_numbers }}"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Add/update sets: ${{ inputs.set_numbers }}"
+
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push rejected (remote moved since checkout) - rebasing and retrying, attempt $attempt"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "::error::Rebase hit a real conflict, needs a manual look. Re-run this workflow after checking main."
+              exit 1
+            fi
+          done
+          echo "::error::Still couldn't push after 5 attempts"
+          exit 1
