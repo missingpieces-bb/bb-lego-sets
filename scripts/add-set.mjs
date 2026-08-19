@@ -1,32 +1,36 @@
 #!/usr/bin/env node
-// Fetches a LEGO set's non-spare parts and minifigures from Rebrickable
-// and writes parts/<set_num>.json, minifig_parts/<fig_num>.json, and
-// updates index.json, matching what the missing-piece widget expects.
+// Fetches one or more LEGO sets' non-spare parts and minifigures from
+// Rebrickable and writes parts/<set_num>.json, minifig_parts/<fig_num>.json,
+// and updates index.json, matching what the missing-piece widget expects.
 //
 // Run by .github/workflows/add-set.yml — expects REBRICKABLE_API_KEY and
-// SET_NUMBER as environment variables.
+// SET_NUMBERS (comma/newline/space separated, e.g. "10218, 21363") as
+// environment variables. Sets are processed one at a time; if one fails,
+// it's logged as a warning and the rest still run.
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 
 const API_KEY = process.env.REBRICKABLE_API_KEY;
-const RAW_SET_NUMBER = process.env.SET_NUMBER;
+const RAW_SET_NUMBERS = process.env.SET_NUMBERS;
 
 if (!API_KEY) {
   console.error("Missing REBRICKABLE_API_KEY");
   process.exit(1);
 }
-if (!RAW_SET_NUMBER) {
-  console.error("Missing SET_NUMBER");
+if (!RAW_SET_NUMBERS) {
+  console.error("Missing SET_NUMBERS");
   process.exit(1);
 }
 
-// The repo stores bare set numbers ("10218"); Rebrickable's API wants
-// the full identifier with its version suffix ("10218-1"). We assume
-// version 1 unless one was already supplied.
-const SET_NUM = RAW_SET_NUMBER.trim();
-const REBRICKABLE_SET_ID = SET_NUM.includes("-") ? SET_NUM : `${SET_NUM}-1`;
-const STORED_SET_NUM = SET_NUM.split("-")[0];
+const SET_NUMBERS = [
+  ...new Set(
+    RAW_SET_NUMBERS
+      .split(/[\s,]+/)
+      .map((s) => s.trim())
+      .filter(Boolean)
+  ),
+];
 
 const API_ROOT = "https://rebrickable.com/api/v3/lego";
 
@@ -55,13 +59,16 @@ function partId(partNum, colorId) {
   return `${partNum}-${colorId}`;
 }
 
-async function main() {
-  console.log(`Fetching set ${REBRICKABLE_SET_ID}...`);
+async function processSet(rawSetNumber) {
+  const setNum = rawSetNumber.includes("-") ? rawSetNumber.split("-")[0] : rawSetNumber;
+  const rebrickableSetId = rawSetNumber.includes("-") ? rawSetNumber : `${rawSetNumber}-1`;
 
-  const setInfo = await rebrickableGet(`/sets/${REBRICKABLE_SET_ID}/`);
+  console.log(`\n=== ${rebrickableSetId} ===`);
+
+  const setInfo = await rebrickableGet(`/sets/${rebrickableSetId}/`);
   const setName = setInfo.name;
 
-  const rawParts = await rebrickableGet(`/sets/${REBRICKABLE_SET_ID}/parts/`);
+  const rawParts = await rebrickableGet(`/sets/${rebrickableSetId}/parts/`);
   const parts = rawParts
     .filter((p) => !p.is_spare)
     .map((p) => ({
@@ -74,7 +81,7 @@ async function main() {
       label: `${p.part.part_num} \u2014 ${p.part.name} (${p.color.name})`,
     }));
 
-  const rawMinifigs = await rebrickableGet(`/sets/${REBRICKABLE_SET_ID}/minifigs/`);
+  const rawMinifigs = await rebrickableGet(`/sets/${rebrickableSetId}/minifigs/`);
   const minifigs = rawMinifigs.map((m) => ({
     id: m.set_num,
     fig_num: m.set_num,
@@ -85,10 +92,10 @@ async function main() {
   }));
 
   await mkdir("parts", { recursive: true });
-  const setJsonPath = `parts/${STORED_SET_NUM}.json`;
+  const setJsonPath = `parts/${setNum}.json`;
   await writeFile(
     setJsonPath,
-    JSON.stringify({ set_num: STORED_SET_NUM, set_name: setName, parts, minifigs }, null, 2)
+    JSON.stringify({ set_num: setNum, set_name: setName, parts, minifigs }, null, 2)
   );
   console.log(`Wrote ${setJsonPath} (${parts.length} parts, ${minifigs.length} minifigs)`);
 
@@ -116,20 +123,40 @@ async function main() {
     console.log(`Wrote ${outPath} (${figParts.length} parts)`);
   }
 
-  const indexPath = "index.json";
-  const index = existsSync(indexPath) ? JSON.parse(await readFile(indexPath, "utf8")) : [];
-  const withoutThisSet = index.filter((s) => s.set_num !== STORED_SET_NUM);
-  withoutThisSet.push({
-    set_num: STORED_SET_NUM,
-    set_name: setName,
-    part_count: parts.length,
-    minifig_count: minifigs.length,
-  });
-  withoutThisSet.sort((a, b) =>
-    a.set_num.localeCompare(b.set_num, undefined, { numeric: true })
-  );
-  await writeFile(indexPath, JSON.stringify(withoutThisSet));
-  console.log(`Updated index.json (${withoutThisSet.length} sets total)`);
+  return { set_num: setNum, set_name: setName, part_count: parts.length, minifig_count: minifigs.length };
+}
+
+async function main() {
+  console.log(`Processing ${SET_NUMBERS.length} set(s): ${SET_NUMBERS.join(", ")}`);
+
+  const succeeded = [];
+  const failed = [];
+
+  for (const rawSetNumber of SET_NUMBERS) {
+    try {
+      succeeded.push(await processSet(rawSetNumber));
+    } catch (err) {
+      console.log(`::warning::Failed on set ${rawSetNumber}: ${err.message}`);
+      failed.push(rawSetNumber);
+    }
+  }
+
+  if (succeeded.length > 0) {
+    const indexPath = "index.json";
+    let index = existsSync(indexPath) ? JSON.parse(await readFile(indexPath, "utf8")) : [];
+    for (const result of succeeded) {
+      index = index.filter((s) => s.set_num !== result.set_num);
+      index.push(result);
+    }
+    index.sort((a, b) => a.set_num.localeCompare(b.set_num, undefined, { numeric: true }));
+    await writeFile(indexPath, JSON.stringify(index));
+    console.log(`\nUpdated index.json (${index.length} sets total)`);
+  }
+
+  console.log(`\nDone: ${succeeded.length} succeeded, ${failed.length} failed.`);
+  if (failed.length > 0) {
+    console.log(`::warning::Sets that failed and were skipped: ${failed.join(", ")}`);
+  }
 }
 
 main().catch((err) => {
