@@ -1,35 +1,6 @@
-name: Add or refresh a set
-
-on:
-  workflow_dispatch:
-    inputs:
-      set_numbers:
-        description: "LEGO set numbers, comma or newline separated (e.g. 10218, 21363, 43031)"
-        required: true
-        type: string
-
-permissions:
-  contents: write
-
-jobs:
-  add-set:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Fetch set data from Rebrickable and write JSON
-        env:
-          REBRICKABLE_API_KEY: ${{ secrets.REBRICKABLE_API_KEY }}
-          SET_NUMBERS: ${{ inputs.set_numbers }}
-        run: node scripts/add-set.mjs
-
       - name: Commit and push changes
+        env:
+          COMMIT_LABEL: ${{ inputs.set_numbers }}
         run: |
           git config user.name "bb-lego-sets bot"
           git config user.email "actions@users.noreply.github.com"
@@ -39,7 +10,7 @@ jobs:
             echo "Nothing to commit"
             exit 0
           fi
-          git commit -m "Add/update sets: ${{ inputs.set_numbers }}"
+          git commit -m "Add/update sets: $COMMIT_LABEL"
 
           for attempt in 1 2 3 4 5; do
             if git push; then
