@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: add-set
+  cancel-in-progress: false
+
 jobs:
   add-set:
     runs-on: ubuntu-latest
@@ -30,8 +34,6 @@ jobs:
         run: node scripts/add-set.mjs
 
       - name: Commit and push changes
-        env:
-          COMMIT_LABEL: ${{ inputs.set_numbers }}
         run: |
           git config user.name "bb-lego-sets bot"
           git config user.email "actions@users.noreply.github.com"
@@ -41,7 +43,7 @@ jobs:
             echo "Nothing to commit"
             exit 0
           fi
-          git commit -m "Add/update sets: $COMMIT_LABEL"
+          git commit -m "Add/update sets: ${{ inputs.set_numbers }}"
 
           for attempt in 1 2 3 4 5; do
             if git push; then
