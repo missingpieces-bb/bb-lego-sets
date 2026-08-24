@@ -1,0 +1,34 @@
+{
+  "fig_num": "fig-018031",
+  "name": "Imperial Remnant Snowtrooper, Medium Nougat Head",
+  "parts": [
+    {
+      "part_num": "28621pr9563",
+      "name": "Minifig Head, Eyebrows, Reddish Brown Lines, Angry Stare Print",
+      "color": "Medium Nougat",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6541250.jpg"
+    },
+    {
+      "part_num": "118762pr0001",
+      "name": "Helmet, Imperial Remnant Snowtrooper, Black Eyes, Dark Bluish Gray Mouthpiece Print",
+      "color": "White",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6634767.jpg"
+    },
+    {
+      "part_num": "970c27pr0067",
+      "name": "Hips and White Legs with Light Bluish Grey Pockets and Knee Pads Print",
+      "color": "White",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6594468.jpg"
+    },
+    {
+      "part_num": "973c27h27pr0025",
+      "name": "Torso Armour, Red Lights, Utility Belt Print, White Arms and Hands",
+      "color": "White",
+      "qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6635707.jpg"
+    }
+  ]
+}

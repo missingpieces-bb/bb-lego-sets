@@ -1,0 +1,2827 @@
+{
+  "set_num": "75454",
+  "set_name": "Imperial Remnant AT-AT with INT-4",
+  "parts": [
+    {
+      "id": "4735-0",
+      "part_num": "4735",
+      "name": "Bar 1 x 3 [Clip / Anti-Stud]",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4141580.jpg",
+      "label": "4735 — Bar 1 x 3 [Clip / Anti-Stud] (Black)"
+    },
+    {
+      "id": "30374-0",
+      "part_num": "30374",
+      "name": "Bar 4L (Lightsaber Blade / Wand)",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6116604.jpg",
+      "label": "30374 — Bar 4L (Lightsaber Blade / Wand) (Black)"
+    },
+    {
+      "id": "36841-0",
+      "part_num": "36841",
+      "name": "Bracket 1 x 1 - 1 x 1",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6299338.jpg",
+      "label": "36841 — Bracket 1 x 1 - 1 x 1 (Black)"
+    },
+    {
+      "id": "99780-0",
+      "part_num": "99780",
+      "name": "Bracket 1 x 2 - 1 x 2 Inverted",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6020193.jpg",
+      "label": "99780 — Bracket 1 x 2 - 1 x 2 Inverted (Black)"
+    },
+    {
+      "id": "99207-0",
+      "part_num": "99207",
+      "name": "Bracket 1 x 2 - 2 x 2 Inverted",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6000650.jpg",
+      "label": "99207 — Bracket 1 x 2 - 2 x 2 Inverted (Black)"
+    },
+    {
+      "id": "73562-0",
+      "part_num": "73562",
+      "name": "Bracket 3 x 2 x 1 1/3 with Bottom Stud Holder",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6395375.jpg",
+      "label": "73562 — Bracket 3 x 2 x 1 1/3 with Bottom Stud Holder (Black)"
+    },
+    {
+      "id": "3002-0",
+      "part_num": "3002",
+      "name": "Brick 2 x 3",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/300226.jpg",
+      "label": "3002 — Brick 2 x 3 (Black)"
+    },
+    {
+      "id": "24201-0",
+      "part_num": "24201",
+      "name": "Brick Curved Inverted 2 x 1",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6147050.jpg",
+      "label": "24201 — Brick Curved Inverted 2 x 1 (Black)"
+    },
+    {
+      "id": "32803-0",
+      "part_num": "32803",
+      "name": "Brick Curved Inverted 2 x 2 x 2/3",
+      "color": "Black",
+      "max_qty": 5,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6211476.jpg",
+      "label": "32803 — Brick Curved Inverted 2 x 2 x 2/3 (Black)"
+    },
+    {
+      "id": "87620-0",
+      "part_num": "87620",
+      "name": "Brick Wedged 2 x 2 Facet",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4584274.jpg",
+      "label": "87620 — Brick Wedged 2 x 2 Facet (Black)"
+    },
+    {
+      "id": "3937-0",
+      "part_num": "3937",
+      "name": "Hinge Brick 1 x 2 Base",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/393726.jpg",
+      "label": "3937 — Hinge Brick 1 x 2 Base (Black)"
+    },
+    {
+      "id": "53923-0",
+      "part_num": "53923",
+      "name": "Hinge Cylinder 1 x 2 Locking with 1 Finger and Axle Hole On Ends [No Side Slots]",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6265699.jpg",
+      "label": "53923 — Hinge Cylinder 1 x 2 Locking with 1 Finger and Axle Hole On Ends [No Side Slots] (Black)"
+    },
+    {
+      "id": "54657-0",
+      "part_num": "54657",
+      "name": "Hinge Plate 1 x 2 Locking with 2 Fingers On End, without Groove, 7 Teeth",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6267045.jpg",
+      "label": "54657 — Hinge Plate 1 x 2 Locking with 2 Fingers On End, without Groove, 7 Teeth (Black)"
+    },
+    {
+      "id": "50340-0",
+      "part_num": "50340",
+      "name": "Hinge Plate 1 x 2 Locking with 2 Fingers on Side, 7 Teeth",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6266207.jpg",
+      "label": "50340 — Hinge Plate 1 x 2 Locking with 2 Fingers on Side, 7 Teeth (Black)"
+    },
+    {
+      "id": "3024-0",
+      "part_num": "3024",
+      "name": "Plate 1 x 1",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/302426.jpg",
+      "label": "3024 — Plate 1 x 1 (Black)"
+    },
+    {
+      "id": "86996-0",
+      "part_num": "86996",
+      "name": "Plate 1 x 1 x 2/3 with Open Stud",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6388352.jpg",
+      "label": "86996 — Plate 1 x 1 x 2/3 with Open Stud (Black)"
+    },
+    {
+      "id": "3023-0",
+      "part_num": "3023",
+      "name": "Plate 1 x 2",
+      "color": "Black",
+      "max_qty": 11,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/302326.jpg",
+      "label": "3023 — Plate 1 x 2 (Black)"
+    },
+    {
+      "id": "3710-0",
+      "part_num": "3710",
+      "name": "Plate 1 x 4",
+      "color": "Black",
+      "max_qty": 7,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/371026.jpg",
+      "label": "3710 — Plate 1 x 4 (Black)"
+    },
+    {
+      "id": "78329-0",
+      "part_num": "78329",
+      "name": "Plate 1 x 5",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6350415.jpg",
+      "label": "78329 — Plate 1 x 5 (Black)"
+    },
+    {
+      "id": "3460-0",
+      "part_num": "3460",
+      "name": "Plate 1 x 8",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/346026.jpg",
+      "label": "3460 — Plate 1 x 8 (Black)"
+    },
+    {
+      "id": "3022-0",
+      "part_num": "3022",
+      "name": "Plate 2 x 2",
+      "color": "Black",
+      "max_qty": 7,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/302226.jpg",
+      "label": "3022 — Plate 2 x 2 (Black)"
+    },
+    {
+      "id": "3020-0",
+      "part_num": "3020",
+      "name": "Plate 2 x 4",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/302026.jpg",
+      "label": "3020 — Plate 2 x 4 (Black)"
+    },
+    {
+      "id": "77844-0",
+      "part_num": "77844",
+      "name": "Plate 3 x 3 Corner",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6439175.jpg",
+      "label": "77844 — Plate 3 x 3 Corner (Black)"
+    },
+    {
+      "id": "3031-0",
+      "part_num": "3031",
+      "name": "Plate 4 x 4",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4243819.jpg",
+      "label": "3031 — Plate 4 x 4 (Black)"
+    },
+    {
+      "id": "3032-0",
+      "part_num": "3032",
+      "name": "Plate 4 x 6",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/303226.jpg",
+      "label": "3032 — Plate 4 x 6 (Black)"
+    },
+    {
+      "id": "6141-0",
+      "part_num": "6141",
+      "name": "Plate Round 1 x 1 with Solid Stud",
+      "color": "Black",
+      "max_qty": 20,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/614126.jpg",
+      "label": "6141 — Plate Round 1 x 1 with Solid Stud (Black)"
+    },
+    {
+      "id": "4032a-0",
+      "part_num": "4032a",
+      "name": "Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening)",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/403226.jpg",
+      "label": "4032a — Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening) (Black)"
+    },
+    {
+      "id": "61252-0",
+      "part_num": "61252",
+      "name": "Plate Special 1 x 1 with Clip Horizontal [Thick Open O Clip]",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6308000.jpg",
+      "label": "61252 — Plate Special 1 x 1 with Clip Horizontal [Thick Open O Clip] (Black)"
+    },
+    {
+      "id": "60470b-0",
+      "part_num": "60470b",
+      "name": "Plate Special 1 x 2 with Clips Horizontal [Open O Clips]",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6310268.jpg",
+      "label": "60470b — Plate Special 1 x 2 with Clips Horizontal [Open O Clips] (Black)"
+    },
+    {
+      "id": "10247-0",
+      "part_num": "10247",
+      "name": "Plate Special 2 x 2 with 1 Pin Hole [Complete Underside Rib]",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6061032.jpg",
+      "label": "10247 — Plate Special 2 x 2 with 1 Pin Hole [Complete Underside Rib] (Black)"
+    },
+    {
+      "id": "5066-0",
+      "part_num": "5066",
+      "name": "Plate Special 2 x 2 with Horizontal T-Bar Underneath",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6488003.jpg",
+      "label": "5066 — Plate Special 2 x 2 with Horizontal T-Bar Underneath (Black)"
+    },
+    {
+      "id": "33909-0",
+      "part_num": "33909",
+      "name": "Plate Special 2 x 2 with Only 2 studs",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6192346.jpg",
+      "label": "33909 — Plate Special 2 x 2 with Only 2 studs (Black)"
+    },
+    {
+      "id": "4304-0",
+      "part_num": "4304",
+      "name": "Plate Special 2 x 2 x 2/3 with Two Studs On Side and Two Raised [Half Hollow Anti-stud] - Updated Version",
+      "color": "Black",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6469445.jpg",
+      "label": "4304 — Plate Special 2 x 2 x 2/3 with Two Studs On Side and Two Raised [Half Hollow Anti-stud] - Updated Version (Black)"
+    },
+    {
+      "id": "26599-0",
+      "part_num": "26599",
+      "name": "Plate Special 2 x 4 with 2 Pin Holes",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6194233.jpg",
+      "label": "26599 — Plate Special 2 x 4 with 2 Pin Holes (Black)"
+    },
+    {
+      "id": "64799-0",
+      "part_num": "64799",
+      "name": "Plate Special 4 x 4 with 2 x 2 Opening",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6058118.jpg",
+      "label": "64799 — Plate Special 4 x 4 with 2 x 2 Opening (Black)"
+    },
+    {
+      "id": "32828-0",
+      "part_num": "32828",
+      "name": "Plate Special Round 1 x 1 with Hollow Stud and Horizontal Bar 1L",
+      "color": "Black",
+      "max_qty": 10,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6196548.jpg",
+      "label": "32828 — Plate Special Round 1 x 1 with Hollow Stud and Horizontal Bar 1L (Black)"
+    },
+    {
+      "id": "4697b-0",
+      "part_num": "4697b",
+      "name": "Pneumatic T-Piece (T Bar) [New Style]",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6104209.jpg",
+      "label": "4697b — Pneumatic T-Piece (T Bar) [New Style] (Black)"
+    },
+    {
+      "id": "3705-0",
+      "part_num": "3705",
+      "name": "Technic Axle 4",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/370526.jpg",
+      "label": "3705 — Technic Axle 4 (Black)"
+    },
+    {
+      "id": "32034-0",
+      "part_num": "32034",
+      "name": "Technic Axle and Pin Connector Angled #2 - 180°",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4107783.jpg",
+      "label": "32034 — Technic Axle and Pin Connector Angled #2 - 180° (Black)"
+    },
+    {
+      "id": "63869-0",
+      "part_num": "63869",
+      "name": "Technic Axle and Pin Connector Perpendicular Triple",
+      "color": "Black",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6007966.jpg",
+      "label": "63869 — Technic Axle and Pin Connector Perpendicular Triple (Black)"
+    },
+    {
+      "id": "45590-0",
+      "part_num": "45590",
+      "name": "Technic Axle Connector Double Flexible [Rubber]",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4198367.jpg",
+      "label": "45590 — Technic Axle Connector Double Flexible [Rubber] (Black)"
+    },
+    {
+      "id": "32271-0",
+      "part_num": "32271",
+      "name": "Technic Beam 1 x 9 Bent (7 - 3) Thick",
+      "color": "Black",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4140327.jpg",
+      "label": "32271 — Technic Beam 1 x 9 Bent (7 - 3) Thick (Black)"
+    },
+    {
+      "id": "32526-0",
+      "part_num": "32526",
+      "name": "Technic Beam 3 x 5 L-Shape Thick",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4142823.jpg",
+      "label": "32526 — Technic Beam 3 x 5 L-Shape Thick (Black)"
+    },
+    {
+      "id": "39794-0",
+      "part_num": "39794",
+      "name": "Technic Beam Frame 7 x 11",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6265643.jpg",
+      "label": "39794 — Technic Beam Frame 7 x 11 (Black)"
+    },
+    {
+      "id": "3701-0",
+      "part_num": "3701",
+      "name": "Technic Brick 1 x 4 [3 Pin Holes]",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/370126.jpg",
+      "label": "3701 — Technic Brick 1 x 4 [3 Pin Holes] (Black)"
+    },
+    {
+      "id": "39793-0",
+      "part_num": "39793",
+      "name": "Technic Connector Beam 3 x 3",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6265644.jpg",
+      "label": "39793 — Technic Connector Beam 3 x 3 (Black)"
+    },
+    {
+      "id": "18654-0",
+      "part_num": "18654",
+      "name": "Technic Pin Connector Round 1L [Beam]",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6121485.jpg",
+      "label": "18654 — Technic Pin Connector Round 1L [Beam] (Black)"
+    },
+    {
+      "id": "61332-0",
+      "part_num": "61332",
+      "name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+      "color": "Black",
+      "max_qty": 80,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6279875.jpg",
+      "label": "61332 — Technic Pin with Friction Ridges Lengthwise with No Center Slots (Black)"
+    },
+    {
+      "id": "63864-0",
+      "part_num": "63864",
+      "name": "Tile 1 x 3",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4558170.jpg",
+      "label": "63864 — Tile 1 x 3 (Black)"
+    },
+    {
+      "id": "99563-0",
+      "part_num": "99563",
+      "name": "Tile Special 1 x 2 with Sloped Walls AKA Money / Gold Bar [Ingot]",
+      "color": "Black",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6156991.jpg",
+      "label": "99563 — Tile Special 1 x 2 with Sloped Walls AKA Money / Gold Bar [Ingot] (Black)"
+    },
+    {
+      "id": "20482-0",
+      "part_num": "20482",
+      "name": "Tile Special Round 1 x 1 with Hollow Bar",
+      "color": "Black",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6167933.jpg",
+      "label": "20482 — Tile Special Round 1 x 1 with Hollow Bar (Black)"
+    },
+    {
+      "id": "58247-0",
+      "part_num": "58247",
+      "name": "Weapon Gun / Blaster Short (Star Wars)",
+      "color": "Black",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4498713.jpg",
+      "label": "58247 — Weapon Gun / Blaster Short (Star Wars) (Black)"
+    },
+    {
+      "id": "92738-0",
+      "part_num": "92738",
+      "name": "Weapon Gun / Blaster Small (Star Wars)",
+      "color": "Black",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4609050.jpg",
+      "label": "92738 — Weapon Gun / Blaster Small (Star Wars) (Black)"
+    },
+    {
+      "id": "66909-0",
+      "part_num": "66909",
+      "name": "Weapon Hilt Symmetric",
+      "color": "Black",
+      "max_qty": 5,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6331084.jpg",
+      "label": "66909 — Weapon Hilt Symmetric (Black)"
+    },
+    {
+      "id": "4032a-1",
+      "part_num": "4032a",
+      "name": "Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening)",
+      "color": "Blue",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/403223.jpg",
+      "label": "4032a — Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening) (Blue)"
+    },
+    {
+      "id": "43093-1",
+      "part_num": "43093",
+      "name": "Technic Axle Pin with Friction Ridges Lengthwise",
+      "color": "Blue",
+      "max_qty": 9,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4206482.jpg",
+      "label": "43093 — Technic Axle Pin with Friction Ridges Lengthwise (Blue)"
+    },
+    {
+      "id": "22961-1",
+      "part_num": "22961",
+      "name": "Technic Pin Connector Hub with 1 Axle",
+      "color": "Blue",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6392886.jpg",
+      "label": "22961 — Technic Pin Connector Hub with 1 Axle (Blue)"
+    },
+    {
+      "id": "42924-1",
+      "part_num": "42924",
+      "name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+      "color": "Blue",
+      "max_qty": 14,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6299413.jpg",
+      "label": "42924 — Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot (Blue)"
+    },
+    {
+      "id": "32000-272",
+      "part_num": "32000",
+      "name": "Technic Brick 1 x 2 [2 Pin Holes]",
+      "color": "Dark Blue",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6574771.jpg",
+      "label": "32000 — Technic Brick 1 x 2 [2 Pin Holes] (Dark Blue)"
+    },
+    {
+      "id": "78258-72",
+      "part_num": "78258",
+      "name": "Bar 2L with Stop in Center",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6350724.jpg",
+      "label": "78258 — Bar 2L with Stop in Center (Dark Bluish Gray)"
+    },
+    {
+      "id": "36840-72",
+      "part_num": "36840",
+      "name": "Bracket 1 x 1 - 1 x 1 Inverted",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6225494.jpg",
+      "label": "36840 — Bracket 1 x 1 - 1 x 1 Inverted (Dark Bluish Gray)"
+    },
+    {
+      "id": "99780-72",
+      "part_num": "99780",
+      "name": "Bracket 1 x 2 - 1 x 2 Inverted",
+      "color": "Dark Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6000606.jpg",
+      "label": "99780 — Bracket 1 x 2 - 1 x 2 Inverted (Dark Bluish Gray)"
+    },
+    {
+      "id": "85984pr0006-72",
+      "part_num": "85984pr0006",
+      "name": "Brick Sloped 30° 1 x 2 x 2/3 with Buttons And Red Screens Print",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6152814.jpg",
+      "label": "85984pr0006 — Brick Sloped 30° 1 x 2 x 2/3 with Buttons And Red Screens Print (Dark Bluish Gray)"
+    },
+    {
+      "id": "87087-72",
+      "part_num": "87087",
+      "name": "Brick Special 1 x 1 with Stud on 1 Side",
+      "color": "Dark Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4558955.jpg",
+      "label": "87087 — Brick Special 1 x 1 with Stud on 1 Side (Dark Bluish Gray)"
+    },
+    {
+      "id": "26604-72",
+      "part_num": "26604",
+      "name": "Brick Special 1 x 1 with Studs on 2 Adjacent Sides",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6332045.jpg",
+      "label": "26604 — Brick Special 1 x 1 with Studs on 2 Adjacent Sides (Dark Bluish Gray)"
+    },
+    {
+      "id": "90258-72",
+      "part_num": "90258",
+      "name": "Brick Special 2 x 2 with Grooves and Axle Hole",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4583879.jpg",
+      "label": "90258 — Brick Special 2 x 2 with Grooves and Axle Hole (Dark Bluish Gray)"
+    },
+    {
+      "id": "53923-72",
+      "part_num": "53923",
+      "name": "Hinge Cylinder 1 x 2 Locking with 1 Finger and Axle Hole On Ends [No Side Slots]",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6265702.jpg",
+      "label": "53923 — Hinge Cylinder 1 x 2 Locking with 1 Finger and Axle Hole On Ends [No Side Slots] (Dark Bluish Gray)"
+    },
+    {
+      "id": "15400-72",
+      "part_num": "15400",
+      "name": "Launcher, Brick Special 1 x 4 Spring Shooter with Light Bluish Gray Top",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6048898.jpg",
+      "label": "15400 — Launcher, Brick Special 1 x 4 Spring Shooter with Light Bluish Gray Top (Dark Bluish Gray)"
+    },
+    {
+      "id": "3024-72",
+      "part_num": "3024",
+      "name": "Plate 1 x 1",
+      "color": "Dark Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4210719.jpg",
+      "label": "3024 — Plate 1 x 1 (Dark Bluish Gray)"
+    },
+    {
+      "id": "4477-72",
+      "part_num": "4477",
+      "name": "Plate 1 x 10",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4257526.jpg",
+      "label": "4477 — Plate 1 x 10 (Dark Bluish Gray)"
+    },
+    {
+      "id": "3710-72",
+      "part_num": "3710",
+      "name": "Plate 1 x 4",
+      "color": "Dark Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211001.jpg",
+      "label": "3710 — Plate 1 x 4 (Dark Bluish Gray)"
+    },
+    {
+      "id": "78329-72",
+      "part_num": "78329",
+      "name": "Plate 1 x 5",
+      "color": "Dark Bluish Gray",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6413109.jpg",
+      "label": "78329 — Plate 1 x 5 (Dark Bluish Gray)"
+    },
+    {
+      "id": "3460-72",
+      "part_num": "3460",
+      "name": "Plate 1 x 8",
+      "color": "Dark Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4210998.jpg",
+      "label": "3460 — Plate 1 x 8 (Dark Bluish Gray)"
+    },
+    {
+      "id": "91988-72",
+      "part_num": "91988",
+      "name": "Plate 2 x 14",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6000970.jpg",
+      "label": "91988 — Plate 2 x 14 (Dark Bluish Gray)"
+    },
+    {
+      "id": "3021-72",
+      "part_num": "3021",
+      "name": "Plate 2 x 3",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211043.jpg",
+      "label": "3021 — Plate 2 x 3 (Dark Bluish Gray)"
+    },
+    {
+      "id": "3020-72",
+      "part_num": "3020",
+      "name": "Plate 2 x 4",
+      "color": "Dark Bluish Gray",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211065.jpg",
+      "label": "3020 — Plate 2 x 4 (Dark Bluish Gray)"
+    },
+    {
+      "id": "3795-72",
+      "part_num": "3795",
+      "name": "Plate 2 x 6",
+      "color": "Dark Bluish Gray",
+      "max_qty": 5,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211002.jpg",
+      "label": "3795 — Plate 2 x 6 (Dark Bluish Gray)"
+    },
+    {
+      "id": "3034-72",
+      "part_num": "3034",
+      "name": "Plate 2 x 8",
+      "color": "Dark Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4210997.jpg",
+      "label": "3034 — Plate 2 x 8 (Dark Bluish Gray)"
+    },
+    {
+      "id": "3031-72",
+      "part_num": "3031",
+      "name": "Plate 4 x 4",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4243831.jpg",
+      "label": "3031 — Plate 4 x 4 (Dark Bluish Gray)"
+    },
+    {
+      "id": "26047-72",
+      "part_num": "26047",
+      "name": "Plate Special 1 x 1 Rounded with Handle",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6388119.jpg",
+      "label": "26047 — Plate Special 1 x 1 Rounded with Handle (Dark Bluish Gray)"
+    },
+    {
+      "id": "60897-72",
+      "part_num": "60897",
+      "name": "Plate Special 1 x 1 with Clip Vertical [Thick Open O Clip]",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4587212.jpg",
+      "label": "60897 — Plate Special 1 x 1 with Clip Vertical [Thick Open O Clip] (Dark Bluish Gray)"
+    },
+    {
+      "id": "14704-72",
+      "part_num": "14704",
+      "name": "Plate Special 1 x 2 5.9mm Centre Side Towball Socket",
+      "color": "Dark Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6146792.jpg",
+      "label": "14704 — Plate Special 1 x 2 5.9mm Centre Side Towball Socket (Dark Bluish Gray)"
+    },
+    {
+      "id": "35480-72",
+      "part_num": "35480",
+      "name": "Plate Special 1 x 2 Rounded with 2 Open Studs",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6221607.jpg",
+      "label": "35480 — Plate Special 1 x 2 Rounded with 2 Open Studs (Dark Bluish Gray)"
+    },
+    {
+      "id": "48336-72",
+      "part_num": "48336",
+      "name": "Plate Special 1 x 2 [Side Handle Closed Ends]",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6146321.jpg",
+      "label": "48336 — Plate Special 1 x 2 [Side Handle Closed Ends] (Dark Bluish Gray)"
+    },
+    {
+      "id": "15573-72",
+      "part_num": "15573",
+      "name": "Plate Special 1 x 2 with 1 Stud with Groove and Inside Stud Holder (Jumper)",
+      "color": "Dark Bluish Gray",
+      "max_qty": 12,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6092572.jpg",
+      "label": "15573 — Plate Special 1 x 2 with 1 Stud with Groove and Inside Stud Holder (Jumper) (Dark Bluish Gray)"
+    },
+    {
+      "id": "63868-72",
+      "part_num": "63868",
+      "name": "Plate Special 1 x 2 with Clip Horizontal on End",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4581225.jpg",
+      "label": "63868 — Plate Special 1 x 2 with Clip Horizontal on End (Dark Bluish Gray)"
+    },
+    {
+      "id": "60470b-72",
+      "part_num": "60470b",
+      "name": "Plate Special 1 x 2 with Clips Horizontal [Open O Clips]",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6350292.jpg",
+      "label": "60470b — Plate Special 1 x 2 with Clips Horizontal [Open O Clips] (Dark Bluish Gray)"
+    },
+    {
+      "id": "11458-72",
+      "part_num": "11458",
+      "name": "Plate Special 1 x 2 with Pin Hole on Top",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6019987.jpg",
+      "label": "11458 — Plate Special 1 x 2 with Pin Hole on Top (Dark Bluish Gray)"
+    },
+    {
+      "id": "34103-72",
+      "part_num": "34103",
+      "name": "Plate Special 1 x 3 with 2 Studs with Groove and Inside Stud Holder (Jumper)",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6343852.jpg",
+      "label": "34103 — Plate Special 1 x 3 with 2 Studs with Groove and Inside Stud Holder (Jumper) (Dark Bluish Gray)"
+    },
+    {
+      "id": "4510-72",
+      "part_num": "4510",
+      "name": "Plate Special 1 x 8 with Door Rail",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4210967.jpg",
+      "label": "4510 — Plate Special 1 x 8 with Door Rail (Dark Bluish Gray)"
+    },
+    {
+      "id": "6180-72",
+      "part_num": "6180",
+      "name": "Plate Special 4 x 6 with Studs on 3 Edges",
+      "color": "Dark Bluish Gray",
+      "max_qty": 7,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4271648.jpg",
+      "label": "6180 — Plate Special 4 x 6 with Studs on 3 Edges (Dark Bluish Gray)"
+    },
+    {
+      "id": "92099-72",
+      "part_num": "92099",
+      "name": "Plate Special 4 x 6 with Trap Door Hinge [Long Pins]",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4595710.jpg",
+      "label": "92099 — Plate Special 4 x 6 with Trap Door Hinge [Long Pins] (Dark Bluish Gray)"
+    },
+    {
+      "id": "18674-72",
+      "part_num": "18674",
+      "name": "Plate Special Round 2 x 2 with Center Stud (Jumper Plate)",
+      "color": "Dark Bluish Gray",
+      "max_qty": 13,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6115080.jpg",
+      "label": "18674 — Plate Special Round 2 x 2 with Center Stud (Jumper Plate) (Dark Bluish Gray)"
+    },
+    {
+      "id": "99021-72",
+      "part_num": "99021",
+      "name": "Pneumatic Hose Connector with Axle Connector",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6020189.jpg",
+      "label": "99021 — Pneumatic Hose Connector with Axle Connector (Dark Bluish Gray)"
+    },
+    {
+      "id": "80563-72",
+      "part_num": "80563",
+      "name": "Rotation Joint Socket with 2 Pins",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6369944.jpg",
+      "label": "80563 — Rotation Joint Socket with 2 Pins (Dark Bluish Gray)"
+    },
+    {
+      "id": "87083-72",
+      "part_num": "87083",
+      "name": "Technic Axle 4 with Stop",
+      "color": "Dark Bluish Gray",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4560177.jpg",
+      "label": "87083 — Technic Axle 4 with Stop (Dark Bluish Gray)"
+    },
+    {
+      "id": "11214-72",
+      "part_num": "11214",
+      "name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+      "color": "Dark Bluish Gray",
+      "max_qty": 12,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6015356.jpg",
+      "label": "11214 — Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle (Dark Bluish Gray)"
+    },
+    {
+      "id": "32525-72",
+      "part_num": "32525",
+      "name": "Technic Beam 1 x 11 Thick",
+      "color": "Dark Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4210755.jpg",
+      "label": "32525 — Technic Beam 1 x 11 Thick (Dark Bluish Gray)"
+    },
+    {
+      "id": "43857-72",
+      "part_num": "43857",
+      "name": "Technic Beam 1 x 2 Thick",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6179631.jpg",
+      "label": "43857 — Technic Beam 1 x 2 Thick (Dark Bluish Gray)"
+    },
+    {
+      "id": "32316-72",
+      "part_num": "32316",
+      "name": "Technic Beam 1 x 5 Thick",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4210686.jpg",
+      "label": "32316 — Technic Beam 1 x 5 Thick (Dark Bluish Gray)"
+    },
+    {
+      "id": "32524-72",
+      "part_num": "32524",
+      "name": "Technic Beam 1 x 7 Thick",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4210752.jpg",
+      "label": "32524 — Technic Beam 1 x 7 Thick (Dark Bluish Gray)"
+    },
+    {
+      "id": "85943-72",
+      "part_num": "85943",
+      "name": "Technic Brick 1 x 2 with Hole and Dual Beam Extensions",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4547958.jpg",
+      "label": "85943 — Technic Brick 1 x 2 with Hole and Dual Beam Extensions (Dark Bluish Gray)"
+    },
+    {
+      "id": "44224-72",
+      "part_num": "44224",
+      "name": "Technic Rotation Joint Disk with Pin Hole and 3L Beam Thick",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4182751.jpg",
+      "label": "44224 — Technic Rotation Joint Disk with Pin Hole and 3L Beam Thick (Dark Bluish Gray)"
+    },
+    {
+      "id": "2741-72",
+      "part_num": "2741",
+      "name": "Technic Steering Wheel Large",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6306723.jpg",
+      "label": "2741 — Technic Steering Wheel Large (Dark Bluish Gray)"
+    },
+    {
+      "id": "3069b-72",
+      "part_num": "3069b",
+      "name": "Tile 1 x 2 with Groove",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211052.jpg",
+      "label": "3069b — Tile 1 x 2 with Groove (Dark Bluish Gray)"
+    },
+    {
+      "id": "26601-72",
+      "part_num": "26601",
+      "name": "Wedge Plate 2 x 2 Cut Corner",
+      "color": "Dark Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6164073.jpg",
+      "label": "26601 — Wedge Plate 2 x 2 Cut Corner (Dark Bluish Gray)"
+    },
+    {
+      "id": "51739-72",
+      "part_num": "51739",
+      "name": "Wedge Plate 2 x 4",
+      "color": "Dark Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4527082.jpg",
+      "label": "51739 — Wedge Plate 2 x 4 (Dark Bluish Gray)"
+    },
+    {
+      "id": "30503-72",
+      "part_num": "30503",
+      "name": "Wedge Plate 4 x 4 Cut Corner",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4210728.jpg",
+      "label": "30503 — Wedge Plate 4 x 4 Cut Corner (Dark Bluish Gray)"
+    },
+    {
+      "id": "60594-72",
+      "part_num": "60594",
+      "name": "Window 1 x 4 x 3 without Shutter Tabs",
+      "color": "Dark Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4551044.jpg",
+      "label": "60594 — Window 1 x 4 x 3 without Shutter Tabs (Dark Bluish Gray)"
+    },
+    {
+      "id": "3710-484",
+      "part_num": "3710",
+      "name": "Plate 1 x 4",
+      "color": "Dark Orange",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4164448.jpg",
+      "label": "3710 — Plate 1 x 4 (Dark Orange)"
+    },
+    {
+      "id": "11212-484",
+      "part_num": "11212",
+      "name": "Plate 3 x 3",
+      "color": "Dark Orange",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6490183.jpg",
+      "label": "11212 — Plate 3 x 3 (Dark Orange)"
+    },
+    {
+      "id": "3958-484",
+      "part_num": "3958",
+      "name": "Plate 6 x 6",
+      "color": "Dark Orange",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6310668.jpg",
+      "label": "3958 — Plate 6 x 6 (Dark Orange)"
+    },
+    {
+      "id": "33909-484",
+      "part_num": "33909",
+      "name": "Plate Special 2 x 2 with Only 2 studs",
+      "color": "Dark Orange",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6394948.jpg",
+      "label": "33909 — Plate Special 2 x 2 with Only 2 studs (Dark Orange)"
+    },
+    {
+      "id": "3070b-484",
+      "part_num": "3070b",
+      "name": "Tile 1 x 1 with Groove",
+      "color": "Dark Orange",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6143431.jpg",
+      "label": "3070b — Tile 1 x 1 with Groove (Dark Orange)"
+    },
+    {
+      "id": "87079-484",
+      "part_num": "87079",
+      "name": "Tile 2 x 4 with Groove",
+      "color": "Dark Orange",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6058089.jpg",
+      "label": "87079 — Tile 2 x 4 with Groove (Dark Orange)"
+    },
+    {
+      "id": "3023-28",
+      "part_num": "3023",
+      "name": "Plate 1 x 2",
+      "color": "Dark Tan",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4528604.jpg",
+      "label": "3023 — Plate 1 x 2 (Dark Tan)"
+    },
+    {
+      "id": "3623-28",
+      "part_num": "3623",
+      "name": "Plate 1 x 3",
+      "color": "Dark Tan",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6132768.jpg",
+      "label": "3623 — Plate 1 x 3 (Dark Tan)"
+    },
+    {
+      "id": "3710-28",
+      "part_num": "3710",
+      "name": "Plate 1 x 4",
+      "color": "Dark Tan",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4626904.jpg",
+      "label": "3710 — Plate 1 x 4 (Dark Tan)"
+    },
+    {
+      "id": "3666-28",
+      "part_num": "3666",
+      "name": "Plate 1 x 6",
+      "color": "Dark Tan",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6015424.jpg",
+      "label": "3666 — Plate 1 x 6 (Dark Tan)"
+    },
+    {
+      "id": "3795-28",
+      "part_num": "3795",
+      "name": "Plate 2 x 6",
+      "color": "Dark Tan",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4550329.jpg",
+      "label": "3795 — Plate 2 x 6 (Dark Tan)"
+    },
+    {
+      "id": "2540-28",
+      "part_num": "2540",
+      "name": "Plate Special 1 x 2 Side Handle [Free Ends]",
+      "color": "Dark Tan",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6210495.jpg",
+      "label": "2540 — Plate Special 1 x 2 Side Handle [Free Ends] (Dark Tan)"
+    },
+    {
+      "id": "60478-28",
+      "part_num": "60478",
+      "name": "Plate Special 1 x 2 with Handle on End [Closed Ends]",
+      "color": "Dark Tan",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6135607.jpg",
+      "label": "60478 — Plate Special 1 x 2 with Handle on End [Closed Ends] (Dark Tan)"
+    },
+    {
+      "id": "6587-28",
+      "part_num": "6587",
+      "name": "Technic Axle 3 with Stud",
+      "color": "Dark Tan",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6031821.jpg",
+      "label": "6587 — Technic Axle 3 with Stud (Dark Tan)"
+    },
+    {
+      "id": "3484-71",
+      "part_num": "3484",
+      "name": "Bar 1L with Clip [Cut Edges and One Side Hole] [Full Clip]",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6439041.jpg",
+      "label": "3484 — Bar 1L with Clip [Cut Edges and One Side Hole] [Full Clip] (Light Bluish Gray)"
+    },
+    {
+      "id": "30374-71",
+      "part_num": "30374",
+      "name": "Bar 4L (Lightsaber Blade / Wand)",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211628.jpg",
+      "label": "30374 — Bar 4L (Lightsaber Blade / Wand) (Light Bluish Gray)"
+    },
+    {
+      "id": "23443-71",
+      "part_num": "23443",
+      "name": "Bar Holder with Hole and Bar Handle",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6152107.jpg",
+      "label": "23443 — Bar Holder with Hole and Bar Handle (Light Bluish Gray)"
+    },
+    {
+      "id": "36841-71",
+      "part_num": "36841",
+      "name": "Bracket 1 x 1 - 1 x 1",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6248078.jpg",
+      "label": "36841 — Bracket 1 x 1 - 1 x 1 (Light Bluish Gray)"
+    },
+    {
+      "id": "79389-71",
+      "part_num": "79389",
+      "name": "Bracket 1 x 1 - 1 x 2",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6362975.jpg",
+      "label": "79389 — Bracket 1 x 1 - 1 x 2 (Light Bluish Gray)"
+    },
+    {
+      "id": "99781-71",
+      "part_num": "99781",
+      "name": "Bracket 1 x 2 - 1 x 2",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4654582.jpg",
+      "label": "99781 — Bracket 1 x 2 - 1 x 2 (Light Bluish Gray)"
+    },
+    {
+      "id": "3005-71",
+      "part_num": "3005",
+      "name": "Brick 1 x 1",
+      "color": "Light Bluish Gray",
+      "max_qty": 16,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211389.jpg",
+      "label": "3005 — Brick 1 x 1 (Light Bluish Gray)"
+    },
+    {
+      "id": "3245c-71",
+      "part_num": "3245c",
+      "name": "Brick 1 x 2 x 2 with Inside Stud Holder",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211564.jpg",
+      "label": "3245c — Brick 1 x 2 x 2 with Inside Stud Holder (Light Bluish Gray)"
+    },
+    {
+      "id": "3009-71",
+      "part_num": "3009",
+      "name": "Brick 1 x 6",
+      "color": "Light Bluish Gray",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211393.jpg",
+      "label": "3009 — Brick 1 x 6 (Light Bluish Gray)"
+    },
+    {
+      "id": "2357-71",
+      "part_num": "2357",
+      "name": "Brick 2 x 2 Corner",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211349.jpg",
+      "label": "2357 — Brick 2 x 2 Corner (Light Bluish Gray)"
+    },
+    {
+      "id": "2456-71",
+      "part_num": "2456",
+      "name": "Brick 2 x 6",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211795.jpg",
+      "label": "2456 — Brick 2 x 6 (Light Bluish Gray)"
+    },
+    {
+      "id": "5907-71",
+      "part_num": "5907",
+      "name": "Brick Curved 1 x 2 x 1 2/3 with 1 Cutout",
+      "color": "Light Bluish Gray",
+      "max_qty": 16,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6548933.jpg",
+      "label": "5907 — Brick Curved 1 x 2 x 1 2/3 with 1 Cutout (Light Bluish Gray)"
+    },
+    {
+      "id": "11477-71",
+      "part_num": "11477",
+      "name": "Brick Curved 2 x 1 No Studs [1/2 Bow]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6028813.jpg",
+      "label": "11477 — Brick Curved 2 x 1 No Studs [1/2 Bow] (Light Bluish Gray)"
+    },
+    {
+      "id": "15068-71",
+      "part_num": "15068",
+      "name": "Brick Curved 2 x 2 x 2/3",
+      "color": "Light Bluish Gray",
+      "max_qty": 12,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6102357.jpg",
+      "label": "15068 — Brick Curved 2 x 2 x 2/3 (Light Bluish Gray)"
+    },
+    {
+      "id": "93273-71",
+      "part_num": "93273",
+      "name": "Brick Curved 4 x 1 Double with No Studs",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4622803.jpg",
+      "label": "93273 — Brick Curved 4 x 1 Double with No Studs (Light Bluish Gray)"
+    },
+    {
+      "id": "32803-71",
+      "part_num": "32803",
+      "name": "Brick Curved Inverted 2 x 2 x 2/3",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6185676.jpg",
+      "label": "32803 — Brick Curved Inverted 2 x 2 x 2/3 (Light Bluish Gray)"
+    },
+    {
+      "id": "13547-71",
+      "part_num": "13547",
+      "name": "Brick Curved Inverted 4 x 1",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6132872.jpg",
+      "label": "13547 — Brick Curved Inverted 4 x 1 (Light Bluish Gray)"
+    },
+    {
+      "id": "3262-71",
+      "part_num": "3262",
+      "name": "Brick Round 2 x 2 Dome Top, Vented Stud",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6429052.jpg",
+      "label": "3262 — Brick Round 2 x 2 Dome Top, Vented Stud (Light Bluish Gray)"
+    },
+    {
+      "id": "6222-71",
+      "part_num": "6222",
+      "name": "Brick Round 4 x 4 with 4 Side Pin Holes and Center Axle Hole",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211527.jpg",
+      "label": "6222 — Brick Round 4 x 4 with 4 Side Pin Holes and Center Axle Hole (Light Bluish Gray)"
+    },
+    {
+      "id": "5152-71",
+      "part_num": "5152",
+      "name": "Brick Round Corner 3 x 3 Macaroni with 2 Studs",
+      "color": "Light Bluish Gray",
+      "max_qty": 16,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6584328.jpg",
+      "label": "5152 — Brick Round Corner 3 x 3 Macaroni with 2 Studs (Light Bluish Gray)"
+    },
+    {
+      "id": "5404-71",
+      "part_num": "5404",
+      "name": "Brick Sloped 18° 2 x 1 x 2/3",
+      "color": "Light Bluish Gray",
+      "max_qty": 16,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6493586.jpg",
+      "label": "5404 — Brick Sloped 18° 2 x 1 x 2/3 (Light Bluish Gray)"
+    },
+    {
+      "id": "61409-71",
+      "part_num": "61409",
+      "name": "Brick Sloped 18° 2 x 1 x 2/3 with 4 Slots / Grate",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6092111.jpg",
+      "label": "61409 — Brick Sloped 18° 2 x 1 x 2/3 with 4 Slots / Grate (Light Bluish Gray)"
+    },
+    {
+      "id": "5654-71",
+      "part_num": "5654",
+      "name": "Brick Sloped 1 x 4 with 1 x 2 Cutout",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6558989.jpg",
+      "label": "5654 — Brick Sloped 1 x 4 with 1 x 2 Cutout (Light Bluish Gray)"
+    },
+    {
+      "id": "4569-71",
+      "part_num": "4569",
+      "name": "Brick Sloped 1 x 6 x 1 with 1 x 2 x 1/3 Cutout",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6508016.jpg",
+      "label": "4569 — Brick Sloped 1 x 6 x 1 with 1 x 2 x 1/3 Cutout (Light Bluish Gray)"
+    },
+    {
+      "id": "54200-71",
+      "part_num": "54200",
+      "name": "Brick Sloped 30° 1 x 1 x 2/3 (Cheese Slope)",
+      "color": "Light Bluish Gray",
+      "max_qty": 14,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4244372.jpg",
+      "label": "54200 — Brick Sloped 30° 1 x 1 x 2/3 (Cheese Slope) (Light Bluish Gray)"
+    },
+    {
+      "id": "85984-71",
+      "part_num": "85984",
+      "name": "Brick Sloped 30° 1 x 2 x 2/3",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4568637.jpg",
+      "label": "85984 — Brick Sloped 30° 1 x 2 x 2/3 (Light Bluish Gray)"
+    },
+    {
+      "id": "15672-71",
+      "part_num": "15672",
+      "name": "Brick Sloped 45° 2 x 1 with 2/3 Cutout [New Version]",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6093859.jpg",
+      "label": "15672 — Brick Sloped 45° 2 x 1 with 2/3 Cutout [New Version] (Light Bluish Gray)"
+    },
+    {
+      "id": "3665-71",
+      "part_num": "3665",
+      "name": "Brick Sloped Inverted 45° 2 x 1",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211437.jpg",
+      "label": "3665 — Brick Sloped Inverted 45° 2 x 1 (Light Bluish Gray)"
+    },
+    {
+      "id": "2310-71",
+      "part_num": "2310",
+      "name": "Brick Sloped Inverted 45° 2 x 1 with 2/3 Cutout",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6407767.jpg",
+      "label": "2310 — Brick Sloped Inverted 45° 2 x 1 with 2/3 Cutout (Light Bluish Gray)"
+    },
+    {
+      "id": "76959-71",
+      "part_num": "76959",
+      "name": "Brick Sloped Inverted 45° 2 x 2 [Round Hollow Bottom Pin, Bar-sized Stud Holes]",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6435857.jpg",
+      "label": "76959 — Brick Sloped Inverted 45° 2 x 2 [Round Hollow Bottom Pin, Bar-sized Stud Holes] (Light Bluish Gray)"
+    },
+    {
+      "id": "30136-71",
+      "part_num": "30136",
+      "name": "Brick Special 1 x 2 Palisade [aka Log]",
+      "color": "Light Bluish Gray",
+      "max_qty": 5,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211743.jpg",
+      "label": "30136 — Brick Special 1 x 2 Palisade [aka Log] (Light Bluish Gray)"
+    },
+    {
+      "id": "4740-71",
+      "part_num": "4740",
+      "name": "Dish 2 x 2 Inverted [Radar]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211512.jpg",
+      "label": "4740 — Dish 2 x 2 Inverted [Radar] (Light Bluish Gray)"
+    },
+    {
+      "id": "43898-71",
+      "part_num": "43898",
+      "name": "Dish 3 x 3 Inverted [Radar]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211787.jpg",
+      "label": "43898 — Dish 3 x 3 Inverted [Radar] (Light Bluish Gray)"
+    },
+    {
+      "id": "80326-71",
+      "part_num": "80326",
+      "name": "Flag 2 x 2 Square, Flared Clip Edge [Thick Clips]",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6362688.jpg",
+      "label": "80326 — Flag 2 x 2 Square, Flared Clip Edge [Thick Clips] (Light Bluish Gray)"
+    },
+    {
+      "id": "44301b-71",
+      "part_num": "44301b",
+      "name": "Hinge Plate 1 x 2 Locking with 1 Finger On End, without Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6266231.jpg",
+      "label": "44301b — Hinge Plate 1 x 2 Locking with 1 Finger On End, without Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "98585-71",
+      "part_num": "98585",
+      "name": "Large Figure Weapon, Barrel with 2 Pin Holes and 3 Axle Holes",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6039505.jpg",
+      "label": "98585 — Large Figure Weapon, Barrel with 2 Pin Holes and 3 Axle Holes (Light Bluish Gray)"
+    },
+    {
+      "id": "4865b-71",
+      "part_num": "4865b",
+      "name": "Panel 1 x 2 x 1 [Rounded Corners]",
+      "color": "Light Bluish Gray",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6146223.jpg",
+      "label": "4865b — Panel 1 x 2 x 1 [Rounded Corners] (Light Bluish Gray)"
+    },
+    {
+      "id": "8012-71",
+      "part_num": "8012",
+      "name": "Panel 1 x 4 x 2, No Studs",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6634567.jpg",
+      "label": "8012 — Panel 1 x 4 x 2, No Studs (Light Bluish Gray)"
+    },
+    {
+      "id": "3024-71",
+      "part_num": "3024",
+      "name": "Plate 1 x 1",
+      "color": "Light Bluish Gray",
+      "max_qty": 22,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211399.jpg",
+      "label": "3024 — Plate 1 x 1 (Light Bluish Gray)"
+    },
+    {
+      "id": "4477-71",
+      "part_num": "4477",
+      "name": "Plate 1 x 10",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4251149.jpg",
+      "label": "4477 — Plate 1 x 10 (Light Bluish Gray)"
+    },
+    {
+      "id": "60479-71",
+      "part_num": "60479",
+      "name": "Plate 1 x 12",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4514846.jpg",
+      "label": "60479 — Plate 1 x 12 (Light Bluish Gray)"
+    },
+    {
+      "id": "3023-71",
+      "part_num": "3023",
+      "name": "Plate 1 x 2",
+      "color": "Light Bluish Gray",
+      "max_qty": 21,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211398.jpg",
+      "label": "3023 — Plate 1 x 2 (Light Bluish Gray)"
+    },
+    {
+      "id": "3623-71",
+      "part_num": "3623",
+      "name": "Plate 1 x 3",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211429.jpg",
+      "label": "3623 — Plate 1 x 3 (Light Bluish Gray)"
+    },
+    {
+      "id": "3710-71",
+      "part_num": "3710",
+      "name": "Plate 1 x 4",
+      "color": "Light Bluish Gray",
+      "max_qty": 11,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211445.jpg",
+      "label": "3710 — Plate 1 x 4 (Light Bluish Gray)"
+    },
+    {
+      "id": "3666-71",
+      "part_num": "3666",
+      "name": "Plate 1 x 6",
+      "color": "Light Bluish Gray",
+      "max_qty": 12,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211438.jpg",
+      "label": "3666 — Plate 1 x 6 (Light Bluish Gray)"
+    },
+    {
+      "id": "3460-71",
+      "part_num": "3460",
+      "name": "Plate 1 x 8",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211425.jpg",
+      "label": "3460 — Plate 1 x 8 (Light Bluish Gray)"
+    },
+    {
+      "id": "3832-71",
+      "part_num": "3832",
+      "name": "Plate 2 x 10",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211462.jpg",
+      "label": "3832 — Plate 2 x 10 (Light Bluish Gray)"
+    },
+    {
+      "id": "2445-71",
+      "part_num": "2445",
+      "name": "Plate 2 x 12",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211360.jpg",
+      "label": "2445 — Plate 2 x 12 (Light Bluish Gray)"
+    },
+    {
+      "id": "3022-71",
+      "part_num": "3022",
+      "name": "Plate 2 x 2",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211397.jpg",
+      "label": "3022 — Plate 2 x 2 (Light Bluish Gray)"
+    },
+    {
+      "id": "2420-71",
+      "part_num": "2420",
+      "name": "Plate 2 x 2 Corner",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211353.jpg",
+      "label": "2420 — Plate 2 x 2 Corner (Light Bluish Gray)"
+    },
+    {
+      "id": "3021-71",
+      "part_num": "3021",
+      "name": "Plate 2 x 3",
+      "color": "Light Bluish Gray",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211396.jpg",
+      "label": "3021 — Plate 2 x 3 (Light Bluish Gray)"
+    },
+    {
+      "id": "3020-71",
+      "part_num": "3020",
+      "name": "Plate 2 x 4",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211395.jpg",
+      "label": "3020 — Plate 2 x 4 (Light Bluish Gray)"
+    },
+    {
+      "id": "3795-71",
+      "part_num": "3795",
+      "name": "Plate 2 x 6",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211452.jpg",
+      "label": "3795 — Plate 2 x 6 (Light Bluish Gray)"
+    },
+    {
+      "id": "3034-71",
+      "part_num": "3034",
+      "name": "Plate 2 x 8",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211406.jpg",
+      "label": "3034 — Plate 2 x 8 (Light Bluish Gray)"
+    },
+    {
+      "id": "3031-71",
+      "part_num": "3031",
+      "name": "Plate 4 x 4",
+      "color": "Light Bluish Gray",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4243797.jpg",
+      "label": "3031 — Plate 4 x 4 (Light Bluish Gray)"
+    },
+    {
+      "id": "11833-71",
+      "part_num": "11833",
+      "name": "Plate Round 4 x 4 with 2 x 2 Round Opening",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6028015.jpg",
+      "label": "11833 — Plate Round 4 x 4 with 2 x 2 Round Opening (Light Bluish Gray)"
+    },
+    {
+      "id": "60474-71",
+      "part_num": "60474",
+      "name": "Plate Round 4 x 4 with Pin Hole",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4515351.jpg",
+      "label": "60474 — Plate Round 4 x 4 with Pin Hole (Light Bluish Gray)"
+    },
+    {
+      "id": "18646-71",
+      "part_num": "18646",
+      "name": "Plate Round Half 3 x 6 with 1 x 2 Cutout",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6132983.jpg",
+      "label": "18646 — Plate Round Half 3 x 6 with 1 x 2 Cutout (Light Bluish Gray)"
+    },
+    {
+      "id": "60897-71",
+      "part_num": "60897",
+      "name": "Plate Special 1 x 1 with Clip Vertical [Thick Open O Clip]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4594238.jpg",
+      "label": "60897 — Plate Special 1 x 1 with Clip Vertical [Thick Open O Clip] (Light Bluish Gray)"
+    },
+    {
+      "id": "35480-71",
+      "part_num": "35480",
+      "name": "Plate Special 1 x 2 Rounded with 2 Open Studs",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6248890.jpg",
+      "label": "35480 — Plate Special 1 x 2 Rounded with 2 Open Studs (Light Bluish Gray)"
+    },
+    {
+      "id": "48336-71",
+      "part_num": "48336",
+      "name": "Plate Special 1 x 2 [Side Handle Closed Ends]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4244627.jpg",
+      "label": "48336 — Plate Special 1 x 2 [Side Handle Closed Ends] (Light Bluish Gray)"
+    },
+    {
+      "id": "44861-71",
+      "part_num": "44861",
+      "name": "Plate Special 1 x 2, Top Clip [Open O]",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6326078.jpg",
+      "label": "44861 — Plate Special 1 x 2, Top Clip [Open O] (Light Bluish Gray)"
+    },
+    {
+      "id": "11476-71",
+      "part_num": "11476",
+      "name": "Plate Special 1 x 2 with Clip Horizontal on Side",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6028812.jpg",
+      "label": "11476 — Plate Special 1 x 2 with Clip Horizontal on Side (Light Bluish Gray)"
+    },
+    {
+      "id": "60470b-71",
+      "part_num": "60470b",
+      "name": "Plate Special 1 x 2 with Clips Horizontal [Open O Clips]",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6337268.jpg",
+      "label": "60470b — Plate Special 1 x 2 with Clips Horizontal [Open O Clips] (Light Bluish Gray)"
+    },
+    {
+      "id": "60478-71",
+      "part_num": "60478",
+      "name": "Plate Special 1 x 2 with Handle on End [Closed Ends]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4515369.jpg",
+      "label": "60478 — Plate Special 1 x 2 with Handle on End [Closed Ends] (Light Bluish Gray)"
+    },
+    {
+      "id": "3172-71",
+      "part_num": "3172",
+      "name": "Plate Special 1 x 2 with Pin Hole On Side",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6438836.jpg",
+      "label": "3172 — Plate Special 1 x 2 with Pin Hole On Side (Light Bluish Gray)"
+    },
+    {
+      "id": "34103-71",
+      "part_num": "34103",
+      "name": "Plate Special 1 x 3 with 2 Studs with Groove and Inside Stud Holder (Jumper)",
+      "color": "Light Bluish Gray",
+      "max_qty": 10,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6211969.jpg",
+      "label": "34103 — Plate Special 1 x 3 with 2 Studs with Groove and Inside Stud Holder (Jumper) (Light Bluish Gray)"
+    },
+    {
+      "id": "41740-71",
+      "part_num": "41740",
+      "name": "Plate Special 1 x 4 with 2 Studs with Groove [New Underside]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6257593.jpg",
+      "label": "41740 — Plate Special 1 x 4 with 2 Studs with Groove [New Underside] (Light Bluish Gray)"
+    },
+    {
+      "id": "33909-71",
+      "part_num": "33909",
+      "name": "Plate Special 2 x 2 with Only 2 studs",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6212077.jpg",
+      "label": "33909 — Plate Special 2 x 2 with Only 2 studs (Light Bluish Gray)"
+    },
+    {
+      "id": "3176-71",
+      "part_num": "3176",
+      "name": "Plate Special 3 x 2 with Rounded End, Hole",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211419.jpg",
+      "label": "3176 — Plate Special 3 x 2 with Rounded End, Hole (Light Bluish Gray)"
+    },
+    {
+      "id": "88646-71",
+      "part_num": "88646",
+      "name": "Plate Special 3 x 4 with 1 x 4 Center Studs [Plain]",
+      "color": "Light Bluish Gray",
+      "max_qty": 10,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6079461.jpg",
+      "label": "88646 — Plate Special 3 x 4 with 1 x 4 Center Studs [Plain] (Light Bluish Gray)"
+    },
+    {
+      "id": "64799-71",
+      "part_num": "64799",
+      "name": "Plate Special 4 x 4 with 2 x 2 Opening",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4612621.jpg",
+      "label": "64799 — Plate Special 4 x 4 with 2 x 2 Opening (Light Bluish Gray)"
+    },
+    {
+      "id": "6179-71",
+      "part_num": "6179",
+      "name": "Plate Special 4 x 4 with Studs on One Edge [Plain]",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211837.jpg",
+      "label": "6179 — Plate Special 4 x 4 with Studs on One Edge [Plain] (Light Bluish Gray)"
+    },
+    {
+      "id": "6180-71",
+      "part_num": "6180",
+      "name": "Plate Special 4 x 6 with Studs on 3 Edges",
+      "color": "Light Bluish Gray",
+      "max_qty": 11,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211838.jpg",
+      "label": "6180 — Plate Special 4 x 6 with Studs on 3 Edges (Light Bluish Gray)"
+    },
+    {
+      "id": "92107-71",
+      "part_num": "92107",
+      "name": "Plate Special 6 x 8 Trap Door Frame Horizontal [Long Pin Holders]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6152230.jpg",
+      "label": "92107 — Plate Special 6 x 8 Trap Door Frame Horizontal [Long Pin Holders] (Light Bluish Gray)"
+    },
+    {
+      "id": "1745-71",
+      "part_num": "1745",
+      "name": "Plate Special Round 1 x 2 Half Circle with Stud (Jumper)",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6420741.jpg",
+      "label": "1745 — Plate Special Round 1 x 2 Half Circle with Stud (Jumper) (Light Bluish Gray)"
+    },
+    {
+      "id": "4519-71",
+      "part_num": "4519",
+      "name": "Technic Axle 3",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211815.jpg",
+      "label": "4519 — Technic Axle 3 (Light Bluish Gray)"
+    },
+    {
+      "id": "59443-71",
+      "part_num": "59443",
+      "name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4512360.jpg",
+      "label": "59443 — Technic Axle Connector Smooth [with x Hole + Orientation] (Light Bluish Gray)"
+    },
+    {
+      "id": "42135-71",
+      "part_num": "42135",
+      "name": "Technic Axle Connector with Axle Hole [Reinforced]",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6380605.jpg",
+      "label": "42135 — Technic Axle Connector with Axle Hole [Reinforced] (Light Bluish Gray)"
+    },
+    {
+      "id": "32316-71",
+      "part_num": "32316",
+      "name": "Technic Beam 1 x 5 Thick",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211651.jpg",
+      "label": "32316 — Technic Beam 1 x 5 Thick (Light Bluish Gray)"
+    },
+    {
+      "id": "40490-71",
+      "part_num": "40490",
+      "name": "Technic Beam 1 x 9 Thick",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211866.jpg",
+      "label": "40490 — Technic Beam 1 x 9 Thick (Light Bluish Gray)"
+    },
+    {
+      "id": "14720-71",
+      "part_num": "14720",
+      "name": "Technic Beam 3 x 5 Thick [90° Offset Centre Beam Holes]",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6055519.jpg",
+      "label": "14720 — Technic Beam 3 x 5 Thick [90° Offset Centre Beam Holes] (Light Bluish Gray)"
+    },
+    {
+      "id": "5565-71",
+      "part_num": "5565",
+      "name": "Technic Brick 1 x 3 [3 Pin Holes]",
+      "color": "Light Bluish Gray",
+      "max_qty": 16,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6628593.jpg",
+      "label": "5565 — Technic Brick 1 x 3 [3 Pin Holes] (Light Bluish Gray)"
+    },
+    {
+      "id": "3702-71",
+      "part_num": "3702",
+      "name": "Technic Brick 1 x 8 [7 Pin Holes]",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211442.jpg",
+      "label": "3702 — Technic Brick 1 x 8 [7 Pin Holes] (Light Bluish Gray)"
+    },
+    {
+      "id": "32324-71",
+      "part_num": "32324",
+      "name": "Technic Brick 4 x 4 with 2 x 2 Opening",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211640.jpg",
+      "label": "32324 — Technic Brick 4 x 4 with 2 x 2 Opening (Light Bluish Gray)"
+    },
+    {
+      "id": "3713-71",
+      "part_num": "3713",
+      "name": "Technic Bush",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211622.jpg",
+      "label": "3713 — Technic Bush (Light Bluish Gray)"
+    },
+    {
+      "id": "32123b-71",
+      "part_num": "32123b",
+      "name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211573.jpg",
+      "label": "32123b — Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (Light Bluish Gray)"
+    },
+    {
+      "id": "2723-71",
+      "part_num": "2723",
+      "name": "Technic Disc 3 x 3",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4667578.jpg",
+      "label": "2723 — Technic Disc 3 x 3 (Light Bluish Gray)"
+    },
+    {
+      "id": "3743-71",
+      "part_num": "3743",
+      "name": "Technic Gear Rack 1 x 4",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211450.jpg",
+      "label": "3743 — Technic Gear Rack 1 x 4 (Light Bluish Gray)"
+    },
+    {
+      "id": "4274-71",
+      "part_num": "4274",
+      "name": "Technic Pin 1/2",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211483.jpg",
+      "label": "4274 — Technic Pin 1/2 (Light Bluish Gray)"
+    },
+    {
+      "id": "65489-71",
+      "part_num": "65489",
+      "name": "Technic Pin Connector Hub Perpendicular 3L with 4 Pins (Squared Holes)",
+      "color": "Light Bluish Gray",
+      "max_qty": 10,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6282158.jpg",
+      "label": "65489 — Technic Pin Connector Hub Perpendicular 3L with 4 Pins (Squared Holes) (Light Bluish Gray)"
+    },
+    {
+      "id": "5713-71",
+      "part_num": "5713",
+      "name": "Technic Pin Connector Hub with 3L Axle",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6484902.jpg",
+      "label": "5713 — Technic Pin Connector Hub with 3L Axle (Light Bluish Gray)"
+    },
+    {
+      "id": "65304-71",
+      "part_num": "65304",
+      "name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6321747.jpg",
+      "label": "65304 — Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole] (Light Bluish Gray)"
+    },
+    {
+      "id": "44225-71",
+      "part_num": "44225",
+      "name": "Technic Rotation Joint Disk with Pin and 3L Beam Thick",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211800.jpg",
+      "label": "44225 — Technic Rotation Joint Disk with Pin and 3L Beam Thick (Light Bluish Gray)"
+    },
+    {
+      "id": "3070b-71",
+      "part_num": "3070b",
+      "name": "Tile 1 x 1 with Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211415.jpg",
+      "label": "3070b — Tile 1 x 1 with Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "3069b-71",
+      "part_num": "3069b",
+      "name": "Tile 1 x 2 with Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211414.jpg",
+      "label": "3069b — Tile 1 x 2 with Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "5091-71",
+      "part_num": "5091",
+      "name": "Tile 1 x 2 with Stud Notch Left",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6558800.jpg",
+      "label": "5091 — Tile 1 x 2 with Stud Notch Left (Light Bluish Gray)"
+    },
+    {
+      "id": "5092-71",
+      "part_num": "5092",
+      "name": "Tile 1 x 2 with Stud Notch Right",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6558799.jpg",
+      "label": "5092 — Tile 1 x 2 with Stud Notch Right (Light Bluish Gray)"
+    },
+    {
+      "id": "63864-71",
+      "part_num": "63864",
+      "name": "Tile 1 x 3",
+      "color": "Light Bluish Gray",
+      "max_qty": 24,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4558169.jpg",
+      "label": "63864 — Tile 1 x 3 (Light Bluish Gray)"
+    },
+    {
+      "id": "2431-71",
+      "part_num": "2431",
+      "name": "Tile 1 x 4 with Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 5,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211356.jpg",
+      "label": "2431 — Tile 1 x 4 with Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "6636-71",
+      "part_num": "6636",
+      "name": "Tile 1 x 6 with Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211549.jpg",
+      "label": "6636 — Tile 1 x 6 with Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "4162-71",
+      "part_num": "4162",
+      "name": "Tile 1 x 8 with Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211481.jpg",
+      "label": "4162 — Tile 1 x 8 with Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "14719-71",
+      "part_num": "14719",
+      "name": "Tile 2 x 2 Corner",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6065824.jpg",
+      "label": "14719 — Tile 2 x 2 Corner (Light Bluish Gray)"
+    },
+    {
+      "id": "27925-71",
+      "part_num": "27925",
+      "name": "Tile 2 x 2 Curved, Macaroni",
+      "color": "Light Bluish Gray",
+      "max_qty": 22,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6163990.jpg",
+      "label": "27925 — Tile 2 x 2 Curved, Macaroni (Light Bluish Gray)"
+    },
+    {
+      "id": "3068b-71",
+      "part_num": "3068b",
+      "name": "Tile 2 x 2 with Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211413.jpg",
+      "label": "3068b — Tile 2 x 2 with Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "26603-71",
+      "part_num": "26603",
+      "name": "Tile 2 x 3",
+      "color": "Light Bluish Gray",
+      "max_qty": 9,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6171894.jpg",
+      "label": "26603 — Tile 2 x 3 (Light Bluish Gray)"
+    },
+    {
+      "id": "87079-71",
+      "part_num": "87079",
+      "name": "Tile 2 x 4 with Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 13,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4560183.jpg",
+      "label": "87079 — Tile 2 x 4 with Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "69729-71",
+      "part_num": "69729",
+      "name": "Tile 2 x 6",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6318584.jpg",
+      "label": "69729 — Tile 2 x 6 (Light Bluish Gray)"
+    },
+    {
+      "id": "98138-71",
+      "part_num": "98138",
+      "name": "Tile Round 1 x 1",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4650260.jpg",
+      "label": "98138 — Tile Round 1 x 1 (Light Bluish Gray)"
+    },
+    {
+      "id": "25269-71",
+      "part_num": "25269",
+      "name": "Tile Round 1 x 1 Quarter",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6176433.jpg",
+      "label": "25269 — Tile Round 1 x 1 Quarter (Light Bluish Gray)"
+    },
+    {
+      "id": "1748-71",
+      "part_num": "1748",
+      "name": "Tile Round 1 x 2 Half Circle",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6510070.jpg",
+      "label": "1748 — Tile Round 1 x 2 Half Circle (Light Bluish Gray)"
+    },
+    {
+      "id": "14769-71",
+      "part_num": "14769",
+      "name": "Tile Round 2 x 2 with Bottom Stud Holder",
+      "color": "Light Bluish Gray",
+      "max_qty": 5,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6052200.jpg",
+      "label": "14769 — Tile Round 2 x 2 with Bottom Stud Holder (Light Bluish Gray)"
+    },
+    {
+      "id": "99563-71",
+      "part_num": "99563",
+      "name": "Tile Special 1 x 2 with Sloped Walls AKA Money / Gold Bar [Ingot]",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6134378.jpg",
+      "label": "99563 — Tile Special 1 x 2 with Sloped Walls AKA Money / Gold Bar [Ingot] (Light Bluish Gray)"
+    },
+    {
+      "id": "27263-71",
+      "part_num": "27263",
+      "name": "Tile Special 2 x 2 Corner with Cut Corner - Facet",
+      "color": "Light Bluish Gray",
+      "max_qty": 6,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6177078.jpg",
+      "label": "27263 — Tile Special 2 x 2 Corner with Cut Corner - Facet (Light Bluish Gray)"
+    },
+    {
+      "id": "26601-71",
+      "part_num": "26601",
+      "name": "Wedge Plate 2 x 2 Cut Corner",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6186657.jpg",
+      "label": "26601 — Wedge Plate 2 x 2 Cut Corner (Light Bluish Gray)"
+    },
+    {
+      "id": "24299-71",
+      "part_num": "24299",
+      "name": "Wedge Plate 2 x 2 Left",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6163478.jpg",
+      "label": "24299 — Wedge Plate 2 x 2 Left (Light Bluish Gray)"
+    },
+    {
+      "id": "24307-71",
+      "part_num": "24307",
+      "name": "Wedge Plate 2 x 2 Right",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6163477.jpg",
+      "label": "24307 — Wedge Plate 2 x 2 Right (Light Bluish Gray)"
+    },
+    {
+      "id": "51739-71",
+      "part_num": "51739",
+      "name": "Wedge Plate 2 x 4",
+      "color": "Light Bluish Gray",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4252368.jpg",
+      "label": "51739 — Wedge Plate 2 x 4 (Light Bluish Gray)"
+    },
+    {
+      "id": "65429-71",
+      "part_num": "65429",
+      "name": "Wedge Plate 2 x 4 27° Left",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6306729.jpg",
+      "label": "65429 — Wedge Plate 2 x 4 27° Left (Light Bluish Gray)"
+    },
+    {
+      "id": "65426-71",
+      "part_num": "65426",
+      "name": "Wedge Plate 2 x 4 27° Right",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6306728.jpg",
+      "label": "65426 — Wedge Plate 2 x 4 27° Right (Light Bluish Gray)"
+    },
+    {
+      "id": "43723-71",
+      "part_num": "43723",
+      "name": "Wedge Plate 3 x 2 Left",
+      "color": "Light Bluish Gray",
+      "max_qty": 16,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211794.jpg",
+      "label": "43723 — Wedge Plate 3 x 2 Left (Light Bluish Gray)"
+    },
+    {
+      "id": "43722-71",
+      "part_num": "43722",
+      "name": "Wedge Plate 3 x 2 Right",
+      "color": "Light Bluish Gray",
+      "max_qty": 16,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211791.jpg",
+      "label": "43722 — Wedge Plate 3 x 2 Right (Light Bluish Gray)"
+    },
+    {
+      "id": "2450-71",
+      "part_num": "2450",
+      "name": "Wedge Plate 3 x 3 Cut Corner",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211361.jpg",
+      "label": "2450 — Wedge Plate 3 x 3 Cut Corner (Light Bluish Gray)"
+    },
+    {
+      "id": "41770-71",
+      "part_num": "41770",
+      "name": "Wedge Plate 4 x 2 Left",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211735.jpg",
+      "label": "41770 — Wedge Plate 4 x 2 Left (Light Bluish Gray)"
+    },
+    {
+      "id": "41769-71",
+      "part_num": "41769",
+      "name": "Wedge Plate 4 x 2 Right",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211732.jpg",
+      "label": "41769 — Wedge Plate 4 x 2 Right (Light Bluish Gray)"
+    },
+    {
+      "id": "30503-71",
+      "part_num": "30503",
+      "name": "Wedge Plate 4 x 4 Cut Corner",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4160560.jpg",
+      "label": "30503 — Wedge Plate 4 x 4 Cut Corner (Light Bluish Gray)"
+    },
+    {
+      "id": "78443-71",
+      "part_num": "78443",
+      "name": "Wedge Plate 6 x 2 Left",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6344702.jpg",
+      "label": "78443 — Wedge Plate 6 x 2 Left (Light Bluish Gray)"
+    },
+    {
+      "id": "78444-71",
+      "part_num": "78444",
+      "name": "Wedge Plate 6 x 2 Right",
+      "color": "Light Bluish Gray",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6344703.jpg",
+      "label": "78444 — Wedge Plate 6 x 2 Right (Light Bluish Gray)"
+    },
+    {
+      "id": "54384-71",
+      "part_num": "54384",
+      "name": "Wedge Plate 6 x 3 Left",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4282789.jpg",
+      "label": "54384 — Wedge Plate 6 x 3 Left (Light Bluish Gray)"
+    },
+    {
+      "id": "54383-71",
+      "part_num": "54383",
+      "name": "Wedge Plate 6 x 3 Right",
+      "color": "Light Bluish Gray",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4282786.jpg",
+      "label": "54383 — Wedge Plate 6 x 3 Right (Light Bluish Gray)"
+    },
+    {
+      "id": "42610-71",
+      "part_num": "42610",
+      "name": "Wheel 11 x 8 with Center Groove",
+      "color": "Light Bluish Gray",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211758.jpg",
+      "label": "42610 — Wheel 11 x 8 with Center Groove (Light Bluish Gray)"
+    },
+    {
+      "id": "6607-71",
+      "part_num": "6607",
+      "name": "Wheel Cover 6 Spoke with Axle Hole - 43mm D.",
+      "color": "Light Bluish Gray",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6508515.jpg",
+      "label": "6607 — Wheel Cover 6 Spoke with Axle Hole - 43mm D. (Light Bluish Gray)"
+    },
+    {
+      "id": "5066-84",
+      "part_num": "5066",
+      "name": "Plate Special 2 x 2 with Horizontal T-Bar Underneath",
+      "color": "Medium Nougat",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6596463.jpg",
+      "label": "5066 — Plate Special 2 x 2 with Horizontal T-Bar Underneath (Medium Nougat)"
+    },
+    {
+      "id": "10119215-9999",
+      "part_num": "10119215",
+      "name": "Sticker Sheet for Set 75454-1",
+      "color": "[No Color/Any Color]",
+      "max_qty": 1,
+      "img": "",
+      "label": "10119215 — Sticker Sheet for Set 75454-1 ([No Color/Any Color])"
+    },
+    {
+      "id": "96874-25",
+      "part_num": "96874",
+      "name": "Brick and Axle Separator v2.0",
+      "color": "Orange",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4654448.jpg",
+      "label": "96874 — Brick and Axle Separator v2.0 (Orange)"
+    },
+    {
+      "id": "3020-4",
+      "part_num": "3020",
+      "name": "Plate 2 x 4",
+      "color": "Red",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/302021.jpg",
+      "label": "3020 — Plate 2 x 4 (Red)"
+    },
+    {
+      "id": "4032a-4",
+      "part_num": "4032a",
+      "name": "Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening)",
+      "color": "Red",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/403221.jpg",
+      "label": "4032a — Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening) (Red)"
+    },
+    {
+      "id": "3706-4",
+      "part_num": "3706",
+      "name": "Technic Axle 6",
+      "color": "Red",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4191526.jpg",
+      "label": "3706 — Technic Axle 6 (Red)"
+    },
+    {
+      "id": "32184-4",
+      "part_num": "32184",
+      "name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+      "color": "Red",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4128598.jpg",
+      "label": "32184 — Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole (Red)"
+    },
+    {
+      "id": "73109-4",
+      "part_num": "73109",
+      "name": "Technic Brick Special 1 x 2 with Pin Hole and 1 x 2 Plate",
+      "color": "Red",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6385920.jpg",
+      "label": "73109 — Technic Brick Special 1 x 2 with Pin Hole and 1 x 2 Plate (Red)"
+    },
+    {
+      "id": "89678-4",
+      "part_num": "89678",
+      "name": "Technic Pin 1/2 with Friction",
+      "color": "Red",
+      "max_qty": 93,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6378120.jpg",
+      "label": "89678 — Technic Pin 1/2 with Friction (Red)"
+    },
+    {
+      "id": "66906-4",
+      "part_num": "66906",
+      "name": "Technic Pin with Friction Ridges Lengthwise and Towball - Round Pin Hole",
+      "color": "Red",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6360104.jpg",
+      "label": "66906 — Technic Pin with Friction Ridges Lengthwise and Towball - Round Pin Hole (Red)"
+    },
+    {
+      "id": "99780-70",
+      "part_num": "99780",
+      "name": "Bracket 1 x 2 - 1 x 2 Inverted",
+      "color": "Reddish Brown",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6174856.jpg",
+      "label": "99780 — Bracket 1 x 2 - 1 x 2 Inverted (Reddish Brown)"
+    },
+    {
+      "id": "99207-70",
+      "part_num": "99207",
+      "name": "Bracket 1 x 2 - 2 x 2 Inverted",
+      "color": "Reddish Brown",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6226436.jpg",
+      "label": "99207 — Bracket 1 x 2 - 2 x 2 Inverted (Reddish Brown)"
+    },
+    {
+      "id": "11215-70",
+      "part_num": "11215",
+      "name": "Bracket 5 x 2 x 1 1/3 with Holes, Pin Bottom",
+      "color": "Reddish Brown",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/photos/70/11215-70-fcda36c0-b913-44cd-bbf1-c3ed2ac38216.jpg",
+      "label": "11215 — Bracket 5 x 2 x 1 1/3 with Holes, Pin Bottom (Reddish Brown)"
+    },
+    {
+      "id": "54200-70",
+      "part_num": "54200",
+      "name": "Brick Sloped 30° 1 x 1 x 2/3 (Cheese Slope)",
+      "color": "Reddish Brown",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4260486.jpg",
+      "label": "54200 — Brick Sloped 30° 1 x 1 x 2/3 (Cheese Slope) (Reddish Brown)"
+    },
+    {
+      "id": "85984-70",
+      "part_num": "85984",
+      "name": "Brick Sloped 30° 1 x 2 x 2/3",
+      "color": "Reddish Brown",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6035291.jpg",
+      "label": "85984 — Brick Sloped 30° 1 x 2 x 2/3 (Reddish Brown)"
+    },
+    {
+      "id": "93095-70",
+      "part_num": "93095",
+      "name": "Panel 1 x 2 x 1 with Rounded Corners and Central Divider",
+      "color": "Reddish Brown",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6133860.jpg",
+      "label": "93095 — Panel 1 x 2 x 1 with Rounded Corners and Central Divider (Reddish Brown)"
+    },
+    {
+      "id": "3022-70",
+      "part_num": "3022",
+      "name": "Plate 2 x 2",
+      "color": "Reddish Brown",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4216695.jpg",
+      "label": "3022 — Plate 2 x 2 (Reddish Brown)"
+    },
+    {
+      "id": "32028-70",
+      "part_num": "32028",
+      "name": "Plate Special 1 x 2 with Door Rail",
+      "color": "Reddish Brown",
+      "max_qty": 8,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4645103.jpg",
+      "label": "32028 — Plate Special 1 x 2 with Door Rail (Reddish Brown)"
+    },
+    {
+      "id": "32523-70",
+      "part_num": "32523",
+      "name": "Technic Beam 1 x 3 Thick",
+      "color": "Reddish Brown",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4211330.jpg",
+      "label": "32523 — Technic Beam 1 x 3 Thick (Reddish Brown)"
+    },
+    {
+      "id": "3068b-70",
+      "part_num": "3068b",
+      "name": "Tile 2 x 2 with Groove",
+      "color": "Reddish Brown",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4264030.jpg",
+      "label": "3068b — Tile 2 x 2 with Groove (Reddish Brown)"
+    },
+    {
+      "id": "99563-70",
+      "part_num": "99563",
+      "name": "Tile Special 1 x 2 with Sloped Walls AKA Money / Gold Bar [Ingot]",
+      "color": "Reddish Brown",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6261744.jpg",
+      "label": "99563 — Tile Special 1 x 2 with Sloped Walls AKA Money / Gold Bar [Ingot] (Reddish Brown)"
+    },
+    {
+      "id": "32803-19",
+      "part_num": "32803",
+      "name": "Brick Curved Inverted 2 x 2 x 2/3",
+      "color": "Tan",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6517736.jpg",
+      "label": "32803 — Brick Curved Inverted 2 x 2 x 2/3 (Tan)"
+    },
+    {
+      "id": "6134-19",
+      "part_num": "6134",
+      "name": "Hinge Brick 2 x 2 Top Plate Thin",
+      "color": "Tan",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4143703.jpg",
+      "label": "6134 — Hinge Brick 2 x 2 Top Plate Thin (Tan)"
+    },
+    {
+      "id": "3832-19",
+      "part_num": "3832",
+      "name": "Plate 2 x 10",
+      "color": "Tan",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4114063.jpg",
+      "label": "3832 — Plate 2 x 10 (Tan)"
+    },
+    {
+      "id": "6141-19",
+      "part_num": "6141",
+      "name": "Plate Round 1 x 1 with Solid Stud",
+      "color": "Tan",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4161734.jpg",
+      "label": "6141 — Plate Round 1 x 1 with Solid Stud (Tan)"
+    },
+    {
+      "id": "32028-19",
+      "part_num": "32028",
+      "name": "Plate Special 1 x 2 with Door Rail",
+      "color": "Tan",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4160483.jpg",
+      "label": "32028 — Plate Special 1 x 2 with Door Rail (Tan)"
+    },
+    {
+      "id": "10247-19",
+      "part_num": "10247",
+      "name": "Plate Special 2 x 2 with 1 Pin Hole [Complete Underside Rib]",
+      "color": "Tan",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6302263.jpg",
+      "label": "10247 — Plate Special 2 x 2 with 1 Pin Hole [Complete Underside Rib] (Tan)"
+    },
+    {
+      "id": "3749-19",
+      "part_num": "3749",
+      "name": "Technic Axle Pin without Friction Ridges Lengthwise",
+      "color": "Tan",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4186017.jpg",
+      "label": "3749 — Technic Axle Pin without Friction Ridges Lengthwise (Tan)"
+    },
+    {
+      "id": "3069b-182",
+      "part_num": "3069b",
+      "name": "Tile 1 x 2 with Groove",
+      "color": "Trans-Orange",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4262663.jpg",
+      "label": "3069b — Tile 1 x 2 with Groove (Trans-Orange)"
+    },
+    {
+      "id": "98138-182",
+      "part_num": "98138",
+      "name": "Tile Round 1 x 1",
+      "color": "Trans-Orange",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4646865.jpg",
+      "label": "98138 — Tile Round 1 x 1 (Trans-Orange)"
+    },
+    {
+      "id": "15303-36",
+      "part_num": "15303",
+      "name": "Projectile, Spring Shooter Ammunition 8L Bar",
+      "color": "Trans-Red",
+      "max_qty": 3,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6054526.jpg",
+      "label": "15303 — Projectile, Spring Shooter Ammunition 8L Bar (Trans-Red)"
+    },
+    {
+      "id": "98138-36",
+      "part_num": "98138",
+      "name": "Tile Round 1 x 1",
+      "color": "Trans-Red",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/4646864.jpg",
+      "label": "98138 — Tile Round 1 x 1 (Trans-Red)"
+    },
+    {
+      "id": "6141-46",
+      "part_num": "6141",
+      "name": "Plate Round 1 x 1 with Solid Stud",
+      "color": "Trans-Yellow",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/3005744.jpg",
+      "label": "6141 — Plate Round 1 x 1 with Solid Stud (Trans-Yellow)"
+    },
+    {
+      "id": "78258-15",
+      "part_num": "78258",
+      "name": "Bar 2L with Stop in Center",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6357680.jpg",
+      "label": "78258 — Bar 2L with Stop in Center (White)"
+    },
+    {
+      "id": "29120-15",
+      "part_num": "29120",
+      "name": "Brick Wedged, Curved 2 x 1 with Stud Notch Left",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6213880.jpg",
+      "label": "29120 — Brick Wedged, Curved 2 x 1 with Stud Notch Left (White)"
+    },
+    {
+      "id": "29119-15",
+      "part_num": "29119",
+      "name": "Brick Wedged, Curved 2 x 1 with Stud Notch Right",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6213881.jpg",
+      "label": "29119 — Brick Wedged, Curved 2 x 1 with Stud Notch Right (White)"
+    },
+    {
+      "id": "66956-15",
+      "part_num": "66956",
+      "name": "Brick Wedged, Curved 2 x 2 with Stud Notches",
+      "color": "White",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6301907.jpg",
+      "label": "66956 — Brick Wedged, Curved 2 x 2 with Stud Notches (White)"
+    },
+    {
+      "id": "3024-15",
+      "part_num": "3024",
+      "name": "Plate 1 x 1",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/302401.jpg",
+      "label": "3024 — Plate 1 x 1 (White)"
+    },
+    {
+      "id": "3710-15",
+      "part_num": "3710",
+      "name": "Plate 1 x 4",
+      "color": "White",
+      "max_qty": 4,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/371001.jpg",
+      "label": "3710 — Plate 1 x 4 (White)"
+    },
+    {
+      "id": "3022-15",
+      "part_num": "3022",
+      "name": "Plate 2 x 2",
+      "color": "White",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/302201.jpg",
+      "label": "3022 — Plate 2 x 2 (White)"
+    },
+    {
+      "id": "4032a-15",
+      "part_num": "4032a",
+      "name": "Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening)",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/403201.jpg",
+      "label": "4032a — Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening) (White)"
+    },
+    {
+      "id": "3386-15",
+      "part_num": "3386",
+      "name": "Plate Special 1 x 1 x 2/3 Half Round with Side Stud",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6446788.jpg",
+      "label": "3386 — Plate Special 1 x 1 x 2/3 Half Round with Side Stud (White)"
+    },
+    {
+      "id": "35480-15",
+      "part_num": "35480",
+      "name": "Plate Special 1 x 2 Rounded with 2 Open Studs",
+      "color": "White",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6210272.jpg",
+      "label": "35480 — Plate Special 1 x 2 Rounded with 2 Open Studs (White)"
+    },
+    {
+      "id": "15573-15",
+      "part_num": "15573",
+      "name": "Plate Special 1 x 2 with 1 Stud with Groove and Inside Stud Holder (Jumper)",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6051511.jpg",
+      "label": "15573 — Plate Special 1 x 2 with 1 Stud with Groove and Inside Stud Holder (Jumper) (White)"
+    },
+    {
+      "id": "34103-15",
+      "part_num": "34103",
+      "name": "Plate Special 1 x 3 with 2 Studs with Groove and Inside Stud Holder (Jumper)",
+      "color": "White",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6195371.jpg",
+      "label": "34103 — Plate Special 1 x 3 with 2 Studs with Groove and Inside Stud Holder (Jumper) (White)"
+    },
+    {
+      "id": "77845-15",
+      "part_num": "77845",
+      "name": "Plate Special 1 x 4 Rounded with 2 Open Studs",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6501816.jpg",
+      "label": "77845 — Plate Special 1 x 4 Rounded with 2 Open Studs (White)"
+    },
+    {
+      "id": "18674-15",
+      "part_num": "18674",
+      "name": "Plate Special Round 2 x 2 with Center Stud (Jumper Plate)",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6093053.jpg",
+      "label": "18674 — Plate Special Round 2 x 2 with Center Stud (Jumper Plate) (White)"
+    },
+    {
+      "id": "42003-15",
+      "part_num": "42003",
+      "name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6254109.jpg",
+      "label": "42003 — Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes (White)"
+    },
+    {
+      "id": "73109-15",
+      "part_num": "73109",
+      "name": "Technic Brick Special 1 x 2 with Pin Hole and 1 x 2 Plate",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6342970.jpg",
+      "label": "73109 — Technic Brick Special 1 x 2 with Pin Hole and 1 x 2 Plate (White)"
+    },
+    {
+      "id": "18654-15",
+      "part_num": "18654",
+      "name": "Technic Pin Connector Round 1L [Beam]",
+      "color": "White",
+      "max_qty": 7,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6177114.jpg",
+      "label": "18654 — Technic Pin Connector Round 1L [Beam] (White)"
+    },
+    {
+      "id": "3069b-15",
+      "part_num": "3069b",
+      "name": "Tile 1 x 2 with Groove",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/306901.jpg",
+      "label": "3069b — Tile 1 x 2 with Groove (White)"
+    },
+    {
+      "id": "14769pr0048-15",
+      "part_num": "14769pr0048",
+      "name": "Tile Round 2 x 2 with Light Bluish Grey Imperial Symbol print",
+      "color": "White",
+      "max_qty": 2,
+      "img": "https://cdn.rebrickable.com/media/parts/elements/6594470.jpg",
+      "label": "14769pr0048 — Tile Round 2 x 2 with Light Bluish Grey Imperial Symbol print (White)"
+    }
+  ],
+  "minifigs": [
+    {
+      "id": "fig-018033",
+      "fig_num": "fig-018033",
+      "name": "AT-AT Driver, White Uniform, Printed Legs",
+      "max_qty": 1,
+      "img": "",
+      "label": "fig-018033 — AT-AT Driver, White Uniform, Printed Legs (Minifigure)"
+    },
+    {
+      "id": "fig-017554",
+      "fig_num": "fig-017554",
+      "name": "Grogu, 7789 Body",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/sets/fig-017554/179286.jpg",
+      "label": "fig-017554 — Grogu, 7789 Body (Minifigure)"
+    },
+    {
+      "id": "fig-018031",
+      "fig_num": "fig-018031",
+      "name": "Imperial Remnant Snowtrooper, Medium Nougat Head",
+      "max_qty": 1,
+      "img": "",
+      "label": "fig-018031 — Imperial Remnant Snowtrooper, Medium Nougat Head (Minifigure)"
+    },
+    {
+      "id": "fig-018032",
+      "fig_num": "fig-018032",
+      "name": "Imperial Remnant Snowtrooper, Umber Brown Head",
+      "max_qty": 1,
+      "img": "",
+      "label": "fig-018032 — Imperial Remnant Snowtrooper, Umber Brown Head (Minifigure)"
+    },
+    {
+      "id": "fig-018028",
+      "fig_num": "fig-018028",
+      "name": "Imperial Remnant Warlord",
+      "max_qty": 1,
+      "img": "",
+      "label": "fig-018028 — Imperial Remnant Warlord (Minifigure)"
+    },
+    {
+      "id": "fig-018030",
+      "fig_num": "fig-018030",
+      "name": "Snowtrooper, White Hips, Printed Legs, White Hands (Warm Tan Head)",
+      "max_qty": 1,
+      "img": "",
+      "label": "fig-018030 — Snowtrooper, White Hips, Printed Legs, White Hands (Warm Tan Head) (Minifigure)"
+    },
+    {
+      "id": "fig-017568",
+      "fig_num": "fig-017568",
+      "name": "The Mandalorian / Din Djarin, Dark Brown Outfit with Jet Pack",
+      "max_qty": 1,
+      "img": "https://cdn.rebrickable.com/media/sets/fig-017568/174318.jpg",
+      "label": "fig-017568 — The Mandalorian / Din Djarin, Dark Brown Outfit with Jet Pack (Minifigure)"
+    }
+  ]
+}
